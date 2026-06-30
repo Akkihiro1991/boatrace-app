@@ -63,7 +63,7 @@ export default function RaceDetail({ race, venue, onClose }) {
 
         {/* OC誘導バナー */}
         <a
-          href="https://line.me/ti/g2/ourboat"
+          href="https://line.me/ti/g2/Z5SGsJYNvSmIMnY7MP5eFjfcbcMUVmlr-QHEjA"
           target="_blank"
           rel="noopener noreferrer"
           className="block card p-4 border-blue-600 bg-blue-900/30 text-center"

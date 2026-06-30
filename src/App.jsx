@@ -75,7 +75,11 @@ export default function App() {
         {activeTab === 'today' && (
           <div className="p-4 space-y-4">
             {data?.venues?.length === 0 && (
-              <div className="text-center text-gray-500 py-12">本日の開催情報なし</div>
+              <div className="text-center py-16 space-y-3">
+                <div className="text-4xl">🌙</div>
+                <div className="text-gray-400">本日のレースはすべて終了しました</div>
+                <div className="text-gray-600 text-sm">翌朝6時に自動更新されます</div>
+              </div>
             )}
             {data?.venues?.map(venue => (
               <VenueCard
@@ -121,7 +125,7 @@ export default function App() {
                 風・モーター・選手傾向をもとに<br />みんなで展開を予想するLINEオープンチャット
               </p>
               <a
-                href="https://line.me/ti/g2/ourboat"
+                href="https://line.me/ti/g2/Z5SGsJYNvSmIMnY7MP5eFjfcbcMUVmlr-QHEjA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-green-500 hover:bg-green-400 text-white font-bold py-3 rounded-xl transition-colors"
