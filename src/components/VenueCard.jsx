@@ -1,4 +1,5 @@
 import WindBadge from './WindBadge'
+import { getVenueData, getInRateLabel } from '../data/venues'
 
 const STATUS_DOT = {
   '開催中': 'bg-green-400',
@@ -7,17 +8,25 @@ const STATUS_DOT = {
 }
 
 export default function VenueCard({ venue, onSelectRace }) {
-  const activeRaces = venue.races.filter(r => r.status !== '終了')
-  const latestRace = venue.races.find(r => r.race_no === venue.current_race) ?? venue.races[0]
+  const vData = getVenueData(venue.id)
+  const inRate = vData ? getInRateLabel(vData.in_rate) : null
 
   return (
     <div className="card overflow-hidden">
       {/* 場ヘッダー */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-navy-700">
-        <div className="flex items-center gap-2">
-          <span className={`w-2 h-2 rounded-full ${STATUS_DOT[venue.status] ?? 'bg-gray-500'}`} />
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className={`w-2 h-2 rounded-full flex-shrink-0 ${STATUS_DOT[venue.status] ?? 'bg-gray-500'}`} />
           <span className="font-bold">{venue.name}</span>
           <span className="text-gray-400 text-sm">第{venue.current_race}R</span>
+          {inRate && (
+            <span className={`text-xs ${inRate.color}`}>{inRate.label}</span>
+          )}
+          {vData?.tags?.[0] && (
+            <span className="text-xs bg-navy-700 text-gray-400 px-1.5 py-0.5 rounded-full">
+              {vData.tags[0]}
+            </span>
+          )}
         </div>
         <WindBadge wind={venue.wind} />
       </div>

@@ -1,6 +1,7 @@
 import RacerRow from './RacerRow'
 import WeatherBar from './WeatherBar'
 import ScenarioCard from './ScenarioCard'
+import VenueInfoCard from './VenueInfoCard'
 
 const STATUS_CONFIG = {
   '終了':   { color: 'text-gray-500' },
@@ -37,6 +38,9 @@ export default function RaceDetail({ race, venue, onClose }) {
 
       {/* コンテンツ */}
       <div className="flex-1 overflow-y-auto p-4">
+        {/* 場の特徴 */}
+        <VenueInfoCard venueId={venue?.id} />
+
         {/* 展開シナリオ */}
         <ScenarioCard racers={race.racers} wind={venue?.wind} />
 
