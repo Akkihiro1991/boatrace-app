@@ -1,0 +1,41 @@
+name: データ取得・更新
+
+on:
+  schedule:
+    # 朝6:00 JST (21:00 UTC) - 出走表・選手・モーター
+    - cron: '0 21 * * *'
+    # 昼12:00 JST (3:00 UTC) - 風・進行中レース更新
+    - cron: '0 3 * * *'
+    # 夜22:00 JST (13:00 UTC) - 全結果確定
+    - cron: '0 13 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: 依存ライブラリインストール
+        run: pip install -r scripts/requirements.txt
+
+      - name: スクレイピング実行
+        run: python scripts/scrape.py
+
+      - name: データをコミット・プッシュ
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+          git add public/data/races.json
+          git diff --staged --quiet || git commit -m "data: $(date -u +'%Y-%m-%d %H:%M UTC') 自動更新"
+          git push

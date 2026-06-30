@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-navy-800 rounded-xl border border-navy-700;
+  }
+  .lane-dot {
+    @apply w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0;
+  }
+}
+
+/* ボトムナビ分のパディング */
+.page-content {
+  padding-bottom: 72px;
+}
+
+/* カスタムスクロールバー */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a6e;
+  border-radius: 2px;
+}
