@@ -63,7 +63,7 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-navy-900 border-b border-navy-700 px-4 py-3">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="font-bold text-lg">⚡ 展開ナビ</h1>
+            <h1 className="font-bold text-lg">⚡ 展開予想</h1>
             <div className="text-xs text-gray-500">{data?.date} 更新 {formatTime(lastUpdated)}</div>
           </div>
           <button onClick={refetch} className="text-gray-400 text-xl p-1">↻</button>

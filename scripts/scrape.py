@@ -82,11 +82,13 @@ def get_active_venues():
     return venues
 
 def get_race_list(jcd):
-    """指定場の本日レース番号リストと現在レースを取得"""
+    """指定場の本日レース番号リストと現在レースを取得（終了後も対応）"""
     r = get(f'{BASE}/racelist', params={'jcd': jcd, 'hd': TODAY})
     if not r:
         return [], 1
     soup = BeautifulSoup(r.text, 'lxml')
+
+    # パターン1: href に rno= を含むリンク（進行中の場）
     race_nos = []
     for a in soup.select('a[href*="rno="]'):
         m = re.search(r'rno=(\d+)', a.get('href', ''))
@@ -94,11 +96,27 @@ def get_race_list(jcd):
             rno = int(m.group(1))
             if rno not in race_nos:
                 race_nos.append(rno)
+
+    # パターン2: "1R"〜"12R" のテキストを持つ要素（終了後の場）
+    if not race_nos:
+        for el in soup.select('td, li, span, div, button'):
+            text = el.get_text(strip=True)
+            m = re.match(r'^(\d{1,2})R$', text)
+            if m:
+                rno = int(m.group(1))
+                if 1 <= rno <= 12 and rno not in race_nos:
+                    race_nos.append(rno)
+
     race_nos.sort()
 
-    current = 1
+    # 開催なしの場を除外（取得できたページに "本日" の文字があるが race_nos が 0 → 開催なし）
+    if not race_nos:
+        return [], 1
+
+    current = race_nos[-1]  # デフォルトは最終レース
     for el in soup.select('.is-current, .isCurrentRace'):
-        m = re.search(r'rno=(\d+)', el.get('href', ''))
+        href = el.get('href', '')
+        m = re.search(r'rno=(\d+)', href)
         if m:
             current = int(m.group(1))
             break
@@ -422,19 +440,16 @@ def scrape_venue(venue_id):
 
 def main():
     print(f'=== ボートレースデータ取得 {DATE_LABEL} ===')
-    venues_basic = get_active_venues()
 
-    if not venues_basic:
-        print('本日の開催場が見つかりません')
-        venues_basic = [{'id': jcd, 'name': name} for jcd, name in VENUE_NAMES.items()]
-
-    print(f'開催場: {[v["name"] for v in venues_basic]}')
-
+    # 全24場を直接チェック（アクティブ検出に依存しない）
     venues_data = []
-    for v in venues_basic:
-        result = scrape_venue(v['id'])
-        if result:
+    for jcd, name in VENUE_NAMES.items():
+        result = scrape_venue(jcd)
+        if result and result['races']:
             venues_data.append(result)
+            print(f'  ✅ {name}: {len(result["races"])}R取得')
+        else:
+            print(f'  ─ {name}: 本日開催なし')
         time.sleep(1.0)
 
     output = {
