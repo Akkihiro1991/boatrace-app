@@ -16,7 +16,7 @@ export default function CourseStats({ courseDetail, assignedLane }) {
   if (!courseDetail) return null
 
   const courses = Object.entries(courseDetail)
-    .map(([c, v]) => ({ course: parseInt(c), win: v.win ?? 0, place2: v.place2 ?? 0 }))
+    .map(([c, v]) => ({ course: parseInt(c), win: v.win ?? 0, place2: v.place2 ?? 0, place3: v.place3 ?? 0 }))
     .filter(c => c.win > 0 || c.place2 > 0)
     .sort((a, b) => a.course - b.course)
 
@@ -31,10 +31,11 @@ export default function CourseStats({ courseDetail, assignedLane }) {
             <th className="text-left pb-1 w-12">コース</th>
             <th className="text-right pb-1">勝率</th>
             <th className="text-right pb-1">2連率</th>
+            <th className="text-right pb-1">3連率</th>
           </tr>
         </thead>
         <tbody>
-          {courses.map(({ course, win, place2 }) => (
+          {courses.map(({ course, win, place2, place3 }) => (
             <tr
               key={course}
               className={`border-t border-navy-700 ${course === assignedLane ? 'bg-navy-700/50' : ''}`}
@@ -50,7 +51,8 @@ export default function CourseStats({ courseDetail, assignedLane }) {
                 </div>
               </td>
               <td className={`text-right py-1 ${rateColor(win)}`}>{win.toFixed(1)}%</td>
-              <td className={`text-right py-1 ${rateColor(place2)}`}>{place2.toFixed(1)}%</td>
+              <td className={`text-right py-1 ${rateColor(place2)}`}>{place2 > 0 ? `${place2.toFixed(1)}%` : '-'}</td>
+              <td className={`text-right py-1 ${rateColor(place3 ?? 0)}`}>{place3 > 0 ? `${place3.toFixed(1)}%` : '-'}</td>
             </tr>
           ))}
         </tbody>
