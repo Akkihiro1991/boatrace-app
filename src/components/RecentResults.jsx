@@ -1,32 +1,52 @@
-const BADGE = {
-  '1': { bg: 'bg-yellow-400', text: 'text-black', label: '1着' },
-  '2': { bg: 'bg-gray-300',   text: 'text-black', label: '2着' },
-  '3': { bg: 'bg-orange-500', text: 'text-white', label: '3着' },
-  'F': { bg: 'bg-red-600',    text: 'text-white', label: 'F'   },
-  'L': { bg: 'bg-red-800',    text: 'text-white', label: 'L'   },
-  'K': { bg: 'bg-purple-700', text: 'text-white', label: 'K'   },
+const LANE_COLOR = {
+  1: 'bg-white text-black',
+  2: 'bg-gray-800 text-white border border-gray-500',
+  3: 'bg-red-600 text-white',
+  4: 'bg-blue-600 text-white',
+  5: 'bg-yellow-500 text-black',
+  6: 'bg-green-600 text-white',
 }
 
-function getBadge(result) {
-  if (BADGE[result]) return BADGE[result]
-  const n = parseInt(result)
-  if (!isNaN(n) && n >= 4) return { bg: 'bg-navy-700', text: 'text-gray-400', label: `${n}着` }
-  return { bg: 'bg-gray-700', text: 'text-gray-400', label: result }
+const PLACE_STYLE = {
+  '1': 'text-yellow-400 font-bold',
+  '2': 'text-gray-300 font-bold',
+  '3': 'text-orange-400 font-bold',
+  'F': 'text-red-500 font-bold',
+  'L': 'text-red-700 font-bold',
+  'K': 'text-purple-400 font-bold',
+}
+
+function placeStyle(place) {
+  return PLACE_STYLE[String(place)] ?? 'text-gray-500'
+}
+
+function placeLabel(place) {
+  const s = String(place)
+  if (['F','L','K'].includes(s)) return s
+  return `${s}着`
 }
 
 export default function RecentResults({ results }) {
   if (!results?.length) return null
+
+  const isNew = results[0] && typeof results[0] === 'object' && 'course' in results[0]
+
   return (
-    <div className="flex items-center gap-1">
-      <span className="text-gray-500 text-xs mr-0.5">直近</span>
+    <div className="flex items-center gap-1.5 flex-wrap">
+      <span className="text-gray-500 text-xs">直近</span>
       {results.slice(0, 6).map((r, i) => {
-        const b = getBadge(String(r))
+        const course = isNew ? r.course : null
+        const place  = isNew ? String(r.place) : String(r)
         return (
-          <span
-            key={i}
-            className={`inline-flex items-center justify-center text-xs font-bold px-1.5 py-0.5 rounded ${b.bg} ${b.text}`}
-          >
-            {b.label}
+          <span key={i} className="inline-flex items-center gap-0.5">
+            {course && (
+              <span className={`w-4 h-4 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 ${LANE_COLOR[course] ?? 'bg-gray-600 text-white'}`}>
+                {course}
+              </span>
+            )}
+            <span className={`text-xs ${placeStyle(place)}`}>
+              {placeLabel(place)}
+            </span>
           </span>
         )
       })}

@@ -159,16 +159,22 @@ def get_weather_and_tenji(jcd, rno):
     return base
 
 def get_racer_recent_results(racer_no):
-    """選手の直近6走成績を取得"""
+    """選手の直近6走成績を {course, place} 形式で取得"""
     r = get('https://www.boatrace.jp/owpc/pc/data/racersearch/profile', params={'toban': racer_no})
     if not r:
         return []
     soup = BeautifulSoup(r.text, 'lxml')
     results = []
-    for el in soup.select('.is-result, [class*="recentResult"] td')[:6]:
-        t = el.get_text(strip=True)
-        if t in ('1','2','3','4','5','6','F','L','K'):
-            results.append(t)
+    for row in soup.select('.is-result tr, [class*="recentResult"] tr')[:6]:
+        cols = row.select('td')
+        if len(cols) < 2:
+            continue
+        course_text = cols[0].get_text(strip=True)
+        place_text  = cols[1].get_text(strip=True)
+        course = parse_int(course_text)
+        place  = place_text if place_text in ('F','L','K') else place_text
+        if 1 <= course <= 6:
+            results.append({'course': course, 'place': place})
     return results
 
 def get_course_detail(jcd, rno, racer_no):
