@@ -105,30 +105,90 @@ def get_race_list(jcd):
 
     return race_nos, current
 
-def get_wind(jcd):
-    """展示・直前情報から風データを取得（最終レースのページを使用）"""
-    r = get(f'{BASE}/beforeinfo', params={'rno': 1, 'jcd': jcd, 'hd': TODAY})
+def get_weather_and_tenji(jcd, rno):
+    """展示・直前情報から風・天候・水温・気温・展示タイム・展示STを取得"""
+    r = get(f'{BASE}/beforeinfo', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
+    base = {
+        'wind': {'speed': 0, 'direction': '不明', 'wave': 0},
+        'weather': '晴',
+        'air_temp': None,
+        'water_temp': None,
+        'tenji': {},
+    }
     if not r:
-        return {'speed': 0, 'direction': '不明', 'wave': 0}
+        return base
+
     soup = BeautifulSoup(r.text, 'lxml')
 
-    speed = 0
-    direction = '不明'
-    wave = 0
-
-    wind_el = soup.select_one('.is-windSpeed, [class*="wind"]')
-    if wind_el:
-        speed = parse_float(wind_el.get_text())
-
-    dir_el = soup.select_one('.is-windDirection, [class*="direction"]')
-    if dir_el:
-        direction = dir_el.get_text(strip=True)
-
+    # 風
+    wind_speed_el = soup.select_one('.is-windSpeed, [class*="windSpeed"]')
+    wind_dir_el = soup.select_one('.is-windDirection, [class*="windDirection"]')
     wave_el = soup.select_one('.is-wave, [class*="wave"]')
-    if wave_el:
-        wave = parse_int(wave_el.get_text())
+    base['wind']['speed'] = parse_float(wind_speed_el.get_text() if wind_speed_el else '0')
+    base['wind']['direction'] = wind_dir_el.get_text(strip=True) if wind_dir_el else '不明'
+    base['wind']['wave'] = parse_int(wave_el.get_text() if wave_el else '0')
 
-    return {'speed': speed, 'direction': direction, 'wave': wave}
+    # 天候
+    weather_el = soup.select_one('.is-weather, [class*="weather"]')
+    if weather_el:
+        base['weather'] = weather_el.get_text(strip=True)
+
+    # 気温・水温
+    air_el = soup.select_one('.is-airTemp, [class*="airTemp"]')
+    water_el = soup.select_one('.is-waterTemp, [class*="waterTemp"]')
+    if air_el:
+        base['air_temp'] = parse_float(air_el.get_text())
+    if water_el:
+        base['water_temp'] = parse_float(water_el.get_text())
+
+    # 展示タイム・展示ST（レーンごと）
+    tenji = {}
+    for row in soup.select('table tr, .is-timeRow'):
+        cols = row.select('td')
+        if len(cols) < 3:
+            continue
+        lane = parse_int(cols[0].get_text())
+        if lane < 1 or lane > 6:
+            continue
+        tenji_time = parse_float(cols[1].get_text() if len(cols) > 1 else '0')
+        tenji_st = parse_float(cols[2].get_text() if len(cols) > 2 else '0')
+        if tenji_time > 0:
+            tenji[lane] = {'tenji_time': tenji_time, 'tenji_st': tenji_st}
+
+    base['tenji'] = tenji
+    return base
+
+def get_racer_recent_results(racer_no):
+    """選手の直近6走成績を取得"""
+    r = get('https://www.boatrace.jp/owpc/pc/data/racersearch/profile', params={'toban': racer_no})
+    if not r:
+        return []
+    soup = BeautifulSoup(r.text, 'lxml')
+    results = []
+    for el in soup.select('.is-result, [class*="recentResult"] td')[:6]:
+        t = el.get_text(strip=True)
+        if t in ('1','2','3','4','5','6','F','L','K'):
+            results.append(t)
+    return results
+
+def get_course_detail(jcd, rno, racer_no):
+    """コース別詳細成績（勝率・2連率）を取得"""
+    r = get(f'{BASE}/racelist', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
+    if not r:
+        return {}
+    soup = BeautifulSoup(r.text, 'lxml')
+    detail = {}
+    for row in soup.select(f'[data-racer="{racer_no}"] .courseStats tr, .courseDetail tr'):
+        cols = row.select('td')
+        if len(cols) >= 3:
+            c = parse_int(cols[0].get_text())
+            if 1 <= c <= 6:
+                detail[str(c)] = {
+                    'win': parse_float(cols[1].get_text()),
+                    'place2': parse_float(cols[2].get_text()) if len(cols) > 2 else 0.0,
+                    'place3': parse_float(cols[3].get_text()) if len(cols) > 3 else 0.0,
+                }
+    return detail
 
 def get_racers(jcd, rno):
     """出走表・モーター情報から選手データを取得"""
@@ -191,6 +251,12 @@ def get_racers(jcd, rno):
                 else:
                     course_stats[str(i)] = 0.0
 
+            recent_results = get_racer_recent_results(no) if no else []
+            course_detail = get_course_detail(jcd, rno, no) if no else {}
+            if not course_detail:
+                course_detail = {k: {'win': v, 'place2': 0.0, 'place3': 0.0}
+                                 for k, v in course_stats.items()}
+
             racers.append({
                 'lane': lane,
                 'name': name,
@@ -202,10 +268,15 @@ def get_racers(jcd, rno):
                 'boat_no': boat_no,
                 'boat_2rate': boat_2rate,
                 'course_stats': course_stats,
+                'course_detail': course_detail,
                 'st_avg': st_avg if st_avg > 0 else 0.18,
+                'tenji_time': None,
+                'tenji_st': None,
+                'recent_results': recent_results,
                 'style': guess_style(course_stats),
                 'local_rate': course_stats.get(str(lane), 0.0),
                 'flying': flying,
+                'mae_zuke': False,
             })
         except Exception as e:
             print(f'    racer parse error: {e}')
@@ -301,16 +372,27 @@ def scrape_venue(venue_id):
         print(f'  レースなし')
         return None
 
-    wind = get_wind(jcd)
-    print(f'  風: {wind["direction"]} {wind["speed"]}m 波{wind["wave"]}cm')
+    # 展示・天候情報を現在レースから取得
+    weather_info = get_weather_and_tenji(jcd, current_race)
+    wind = weather_info['wind']
+    print(f'  風: {wind["direction"]} {wind["speed"]}m 波{wind["wave"]}cm / 天候:{weather_info["weather"]} 気温:{weather_info["air_temp"]} 水温:{weather_info["water_temp"]}')
 
     races = []
     for rno in race_nos:
         print(f'  {rno}R 取得中...')
         status, result = get_race_status(jcd, rno, current_race)
         racers = get_racers(jcd, rno)
-        race_time = get_race_time(jcd, rno)
 
+        # 展示タイム・展示STをマージ（現在レースのみ取得）
+        if rno == current_race:
+            tenji = weather_info.get('tenji', {})
+            for racer in racers:
+                t = tenji.get(racer['lane'])
+                if t:
+                    racer['tenji_time'] = t['tenji_time']
+                    racer['tenji_st'] = t['tenji_st']
+
+        race_time = get_race_time(jcd, rno)
         races.append({
             'race_no': rno,
             'time': race_time,
@@ -326,6 +408,9 @@ def scrape_venue(venue_id):
         'status': '開催中' if any(r['status'] in ('進行中', '待機中') for r in races) else '終了',
         'current_race': current_race,
         'wind': wind,
+        'weather': weather_info['weather'],
+        'air_temp': weather_info['air_temp'],
+        'water_temp': weather_info['water_temp'],
         'races': races,
     }
 

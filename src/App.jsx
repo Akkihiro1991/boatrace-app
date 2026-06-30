@@ -180,7 +180,7 @@ export default function App() {
       {selectedRace && selectedVenue && (
         <RaceDetail
           race={selectedRace}
-          wind={selectedVenue.wind}
+          venue={selectedVenue}
           onClose={handleCloseRace}
         />
       )}
