@@ -65,32 +65,46 @@ def parse_int(text, default=0):
         return default
 
 def get_race_list(jcd):
-    """raceindex から本日レース番号リストと現在レースを取得"""
+    """raceindex から本日レース番号・発走時刻・ステータスを一括取得
+
+    Returns: (race_nos, current_race, race_meta)
+      race_meta: {rno: {'time': 'HH:MM', 'closed': bool}}
+        closed=True → 「発売終了」（レース終了 or 進行中）
+    """
     r = get(f'{BASE}/raceindex', params={'jcd': jcd, 'hd': TODAY})
     if not r or 'システムエラー' in r.text:
-        return [], 1
+        return [], 1, {}
     soup = BeautifulSoup(r.text, 'lxml')
 
-    race_nos = []
-    for a in soup.select('a[href*="rno="]'):
+    race_meta = {}
+    for row in soup.select('tr'):
+        a = row.select_one('a[href*="rno="]')
+        if not a:
+            continue
         m = re.search(r'rno=(\d+)', a.get('href', ''))
-        if m:
-            rno = int(m.group(1))
-            if rno not in race_nos:
-                race_nos.append(rno)
-    race_nos.sort()
+        if not m:
+            continue
+        rno = int(m.group(1))
+        tds = row.select('td')
+        time_text = '--:--'
+        closed = False
+        for td in tds:
+            t = td.get_text(strip=True)
+            if re.match(r'^\d{1,2}:\d{2}$', t):
+                time_text = t
+            if t == '発売終了':
+                closed = True
+        race_meta[rno] = {'time': time_text, 'closed': closed}
+
+    race_nos = sorted(race_meta.keys())
     if not race_nos:
-        return [], 1
+        return [], 1, {}
 
-    current = race_nos[-1]
-    for el in soup.select('.is-current, .isCurrentRace, [class*="current"]'):
-        href = el.get('href', '')
-        m = re.search(r'rno=(\d+)', href)
-        if m:
-            current = int(m.group(1))
-            break
+    # 「発売終了」の最後のレースを現在レースとみなす
+    closed_races = [r for r in race_nos if race_meta[r]['closed']]
+    current = closed_races[-1] if closed_races else race_nos[0]
 
-    return race_nos, current
+    return race_nos, current, race_meta
 
 def get_weather_and_tenji(jcd, rno):
     """beforeinfo から風・天候・気温・水温・展示タイムを取得"""
@@ -256,29 +270,33 @@ def get_result(jcd, rno):
     return {'places': places[:6], 'trifecta': trifecta, 'payout': payout}
 
 def scrape_venue(jcd):
-    """1場のデータをまとめて取得（1レースにつき最大2リクエスト）"""
+    """1場のデータをまとめて取得"""
     name = VENUE_NAMES.get(jcd, jcd)
     print(f'[{name}] 取得中...')
 
-    race_nos, current_race = get_race_list(jcd)
+    race_nos, current_race, race_meta = get_race_list(jcd)
     if not race_nos:
         return None
 
     weather_info = get_weather_and_tenji(jcd, current_race)
     wind = weather_info['wind']
-    print(f'  風:{wind["direction"]} {wind["speed"]}m / {weather_info["weather"]} / {len(race_nos)}R')
+    print(f'  風:{wind["direction"]} {wind["speed"]}m / {weather_info["weather"]} / {len(race_nos)}R (現在{current_race}R)')
 
     races = []
     for rno in race_nos:
-        # 1) 出走表（racers + 発走時刻）
+        meta = race_meta.get(rno, {})
+        race_time = meta.get('time', '--:--')
+        is_closed = meta.get('closed', False)  # 発売終了 = 進行中 or 終了
+
+        # 出走表（全レース取得）
         r = get(f'{BASE}/racelist', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
         if r and 'システムエラー' not in r.text:
             soup = BeautifulSoup(r.text, 'lxml')
-            racers, race_time = parse_racers_and_time(soup)
+            racers, _ = parse_racers_and_time(soup)
         else:
-            racers, race_time = [], '--:--'
+            racers = []
 
-        # 展示タイムを現在レースの選手にマージ
+        # 展示タイムを現在レースにマージ
         if rno == current_race:
             tenji = weather_info.get('tenji', {})
             for racer in racers:
@@ -287,17 +305,15 @@ def scrape_venue(jcd):
                     racer['tenji_time'] = t['tenji_time']
                     racer['tenji_st']   = t['tenji_st']
 
-        # 2) 結果（終了済みレースのみ）
+        # 結果（発売終了のレースのみ取得）
         result = None
-        if rno <= current_race:
+        if is_closed:
             result = get_result(jcd, rno)
 
         if result:
             status = '終了'
-        elif rno == current_race:
-            status = '進行中'
-        elif rno < current_race:
-            status = '終了'
+        elif is_closed:
+            status = '進行中'  # 発売終了だが結果未確定
         else:
             status = '待機中'
 
