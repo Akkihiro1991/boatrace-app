@@ -82,13 +82,14 @@ def get_active_venues():
     return venues
 
 def get_race_list(jcd):
-    """指定場の本日レース番号リストと現在レースを取得（終了後も対応）"""
-    r = get(f'{BASE}/racelist', params={'jcd': jcd, 'hd': TODAY})
-    if not r:
+    """指定場の本日レース番号リストと現在レースを取得
+    racelist（rno必須）ではなく raceindex を使う
+    """
+    r = get(f'{BASE}/raceindex', params={'jcd': jcd, 'hd': TODAY})
+    if not r or 'システムエラー' in r.text:
         return [], 1
     soup = BeautifulSoup(r.text, 'lxml')
 
-    # パターン1: href に rno= を含むリンク（進行中の場）
     race_nos = []
     for a in soup.select('a[href*="rno="]'):
         m = re.search(r'rno=(\d+)', a.get('href', ''))
@@ -97,24 +98,12 @@ def get_race_list(jcd):
             if rno not in race_nos:
                 race_nos.append(rno)
 
-    # パターン2: "1R"〜"12R" のテキストを持つ要素（終了後の場）
-    if not race_nos:
-        for el in soup.select('td, li, span, div, button'):
-            text = el.get_text(strip=True)
-            m = re.match(r'^(\d{1,2})R$', text)
-            if m:
-                rno = int(m.group(1))
-                if 1 <= rno <= 12 and rno not in race_nos:
-                    race_nos.append(rno)
-
     race_nos.sort()
-
-    # 開催なしの場を除外（取得できたページに "本日" の文字があるが race_nos が 0 → 開催なし）
     if not race_nos:
         return [], 1
 
-    current = race_nos[-1]  # デフォルトは最終レース
-    for el in soup.select('.is-current, .isCurrentRace'):
+    current = race_nos[-1]
+    for el in soup.select('.is-current, .isCurrentRace, [class*="current"]'):
         href = el.get('href', '')
         m = re.search(r'rno=(\d+)', href)
         if m:
