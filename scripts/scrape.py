@@ -1,16 +1,16 @@
 """
-boatrace.jp スクレイパー
+boatrace.jp スクレイパー（並列版）
 
-リクエスト数: 1場あたり固定 ~14
-  raceindex(1) + beforeinfo(1) + 未開始racelist(N) + 終了raceresult(M)
-  N+M = 12 なので合計 14/場
-14場開催でも ~196リクエスト → 約5分
+Phase1: 全24場のスケジュールを並列取得 (~30秒)
+Phase2: 開催場のレースデータを並列取得 (~3分)
+合計: ~4分（従来34分）
 """
 import json
 import time
 import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 from bs4 import BeautifulSoup
@@ -36,41 +36,32 @@ VENUE_NAMES = {
 
 # ────────── ユーティリティ ──────────
 
-def get(url, params=None, retries=2, wait=1.0):
-    for i in range(retries):
-        try:
-            r = requests.get(url, params=params, headers=HEADERS, timeout=12)
-            r.raise_for_status()
-            r.encoding = 'utf-8'
-            return r
-        except requests.RequestException as e:
-            if i < retries - 1:
-                time.sleep(wait)
-    return None
-
-def ok(r):
-    return r is not None and 'システムエラー' not in r.text
+def get(url, params=None):
+    try:
+        r = requests.get(url, params=params, headers=HEADERS, timeout=12)
+        r.raise_for_status()
+        r.encoding = 'utf-8'
+        if 'システムエラー' in r.text:
+            return None
+        return r
+    except Exception:
+        return None
 
 def pf(text, d=0.0):
-    cleaned = re.sub(r'[^\d.]', '', str(text or '').strip())
-    try: return float(cleaned)
+    try: return float(re.sub(r'[^\d.]', '', str(text or '').strip()))
     except: return d
 
 def pi(text, d=0):
-    cleaned = re.sub(r'[^\d]', '', str(text or '').strip())
-    try: return int(cleaned)
+    try: return int(re.sub(r'[^\d]', '', str(text or '').strip()))
     except: return d
 
-# ────────── raceindex: スケジュール取得 ──────────
+# ────────── Phase1: スケジュール取得 ──────────
 
-def get_race_schedule(jcd):
-    """1場のレーススケジュールを取得。
-    Returns: {rno: {'time': 'HH:MM', 'closed': bool}} or {}
-    closed=True → 発売終了（終了 or 進行中）
-    """
+def fetch_schedule(jcd):
+    """raceindex から1場のスケジュールを取得"""
     r = get(f'{BASE}/raceindex', params={'jcd': jcd, 'hd': TODAY})
-    if not ok(r):
-        return {}
+    if not r:
+        return jcd, {}
     soup = BeautifulSoup(r.text, 'lxml')
 
     schedule = {}
@@ -82,9 +73,8 @@ def get_race_schedule(jcd):
         if not m:
             continue
         rno = int(m.group(1))
-        tds = row.select('td')
         race_time, closed = '--:--', False
-        for td in tds:
+        for td in row.select('td'):
             t = td.get_text(strip=True)
             if re.match(r'^\d{1,2}:\d{2}$', t):
                 race_time = t
@@ -92,32 +82,41 @@ def get_race_schedule(jcd):
                 closed = True
         schedule[rno] = {'time': race_time, 'closed': closed}
 
-    return schedule
+    return jcd, schedule
 
-# ────────── beforeinfo: 天候・展示タイム ──────────
+# ────────── Phase2: レースデータ取得 ──────────
 
-def get_weather(jcd, rno):
+def fetch_weather(jcd, rno):
+    """beforeinfo から風・天候・展示タイムを取得"""
     r = get(f'{BASE}/beforeinfo', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
     base = {'wind': {'speed': 0, 'direction': '不明', 'wave': 0},
             'weather': '晴', 'air_temp': None, 'water_temp': None, 'tenji': {}}
-    if not ok(r):
+    if not r:
         return base
     soup = BeautifulSoup(r.text, 'lxml')
 
-    ws  = soup.select_one('.is-windSpeed, [class*="windSpeed"]')
-    wd  = soup.select_one('.is-windDirection, [class*="windDirection"]')
-    wv  = soup.select_one('.is-wave, [class*="wave"]')
+    # 天候テーブルから数値のみ抽出
+    for label, key in [('.is-windSpeed', 'speed'), ('.is-windDirection', 'direction'),
+                       ('.is-wave', 'wave')]:
+        el = soup.select_one(label) or soup.select_one(f'[class*="{label[4:]}"]')
+        if not el:
+            continue
+        t = el.get_text(strip=True)
+        if key == 'direction':
+            base['wind']['direction'] = t
+        elif key == 'speed':
+            base['wind']['speed'] = pf(t)
+        else:
+            base['wind']['wave'] = pi(t)
+
     wt  = soup.select_one('.is-weather, [class*="weather"]')
     at  = soup.select_one('.is-airTemp, [class*="airTemp"]')
     wtr = soup.select_one('.is-waterTemp, [class*="waterTemp"]')
-
-    base['wind']['speed']     = pf(ws.get_text() if ws else '0')
-    base['wind']['direction'] = wd.get_text(strip=True) if wd else '不明'
-    base['wind']['wave']      = pi(wv.get_text() if wv else '0')
     if wt:  base['weather']    = wt.get_text(strip=True)
     if at:  base['air_temp']   = pf(at.get_text())
     if wtr: base['water_temp'] = pf(wtr.get_text())
 
+    # 展示タイム
     tenji = {}
     for row in soup.select('table tr'):
         cols = row.select('td')
@@ -127,17 +126,15 @@ def get_weather(jcd, rno):
         if not (1 <= lane <= 6):
             continue
         tt = pf(cols[1].get_text())
-        ts = pf(cols[2].get_text())
         if tt > 0:
-            tenji[lane] = {'tenji_time': tt, 'tenji_st': ts}
+            tenji[lane] = {'tenji_time': tt, 'tenji_st': pf(cols[2].get_text())}
     base['tenji'] = tenji
     return base
 
-# ────────── racelist: 出走表パース ──────────
-
-def get_racers(jcd, rno):
+def fetch_racers(jcd, rno):
+    """racelist から選手リストを取得"""
     r = get(f'{BASE}/racelist', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
-    if not ok(r):
+    if not r:
         return []
     soup = BeautifulSoup(r.text, 'lxml')
 
@@ -162,21 +159,16 @@ def get_racers(jcd, rno):
             no_el   = row.select_one('.racerNo, [class*="number"]')
             rank_el = row.select_one('.is-rank, [class*="rank"]')
             br_el   = row.select_one('[class*="branch"]')
-            no     = no_el.get_text(strip=True)   if no_el   else ''
-            rank   = rank_el.get_text(strip=True)  if rank_el else 'B1'
-            branch = br_el.get_text(strip=True)    if br_el   else ''
+            no     = no_el.get_text(strip=True)  if no_el   else ''
+            rank   = rank_el.get_text(strip=True) if rank_el else 'B1'
+            branch = br_el.get_text(strip=True)   if br_el   else ''
 
-            m_tds = [td.get_text(strip=True) for td in row.select('[class*="motor"]')]
-            b_tds = [td.get_text(strip=True) for td in row.select('[class*="boat"]')]
-            motor_no    = pi(m_tds[0]) if m_tds else 0
-            motor_2rate = pf(m_tds[1]) if len(m_tds) > 1 else 0.0
-            boat_no     = pi(b_tds[0]) if b_tds else 0
-            boat_2rate  = pf(b_tds[1]) if len(b_tds) > 1 else 0.0
+            mt = [td.get_text(strip=True) for td in row.select('[class*="motor"]')]
+            bt = [td.get_text(strip=True) for td in row.select('[class*="boat"]')]
 
             st_el = row.select_one('[class*="st"], .is-ST')
             fl_el = row.select_one('[class*="fly"], [class*="late"]')
             st_avg = pf(st_el.get_text() if st_el else '0.18')
-            flying = pi(fl_el.get_text() if fl_el else '0')
 
             cs = {}
             for i in range(1, 7):
@@ -187,8 +179,10 @@ def get_racers(jcd, rno):
                 'lane': lane, 'name': name, 'no': no,
                 'rank': rank if rank in ('A1','A2','B1','B2') else 'B1',
                 'branch': branch,
-                'motor_no': motor_no, 'motor_2rate': motor_2rate,
-                'boat_no': boat_no,   'boat_2rate': boat_2rate,
+                'motor_no': pi(mt[0]) if mt else 0,
+                'motor_2rate': pf(mt[1]) if len(mt) > 1 else 0.0,
+                'boat_no':  pi(bt[0]) if bt else 0,
+                'boat_2rate': pf(bt[1]) if len(bt) > 1 else 0.0,
                 'course_stats': cs,
                 'course_detail': {k: {'win': v, 'place2': 0.0, 'place3': 0.0} for k,v in cs.items()},
                 'st_avg': st_avg if st_avg > 0 else 0.18,
@@ -196,33 +190,21 @@ def get_racers(jcd, rno):
                 'recent_results': [],
                 'style': guess_style(cs),
                 'local_rate': cs.get(str(lane), 0.0),
-                'flying': flying, 'mae_zuke': False,
+                'flying': pi(fl_el.get_text() if fl_el else '0'),
+                'mae_zuke': False,
             })
-        except Exception as e:
+        except Exception:
             continue
 
     racers.sort(key=lambda x: x['lane'])
     return racers
 
-def guess_style(cs):
-    c1 = cs.get('1', 0)
-    c2 = cs.get('2', 0)
-    c3 = cs.get('3', 0) + cs.get('4', 0)
-    if c1 >= 60: return '逃げ'
-    if c2 >= 45: return '差し'
-    if c3 >= 40: return 'まくり'
-    if c2 >= 35 and c3 >= 30: return 'まくり差し'
-    return '差し'
-
-# ────────── raceresult: 確定結果 ──────────
-
-def get_result(jcd, rno):
+def fetch_result(jcd, rno):
+    """raceresult から確定結果を取得"""
     r = get(f'{BASE}/raceresult', params={'rno': rno, 'jcd': jcd, 'hd': TODAY})
-    if not ok(r):
+    if not r or not soup_has_result(r.text):
         return None
     soup = BeautifulSoup(r.text, 'lxml')
-    if not soup.select_one('.result-pay, .is-result, [class*="result"]'):
-        return None
 
     trifecta, payout = '', 0
     for row in soup.select('[class*="trifecta"], [class*="sanren"]'):
@@ -239,60 +221,81 @@ def get_result(jcd, rno):
     places = [pi(el.get_text()) for el in places_el if pi(el.get_text()) > 0]
     return {'places': places[:6], 'trifecta': trifecta, 'payout': payout}
 
-# ────────── メイン: 1場スクレイプ ──────────
+def soup_has_result(html):
+    return bool(re.search(r'result-pay|is-result|["\']result["\']', html))
 
-def scrape_venue(jcd):
+def guess_style(cs):
+    c1 = cs.get('1', 0)
+    c2 = cs.get('2', 0)
+    c3 = cs.get('3', 0) + cs.get('4', 0)
+    if c1 >= 60: return '逃げ'
+    if c2 >= 45: return '差し'
+    if c3 >= 40: return 'まくり'
+    if c2 >= 35 and c3 >= 30: return 'まくり差し'
+    return '差し'
+
+# ────────── 1場スクレイプ ──────────
+
+def fetch_race_data(args):
+    """並列実行用: 1レース分のデータを取得"""
+    jcd, rno, is_closed, is_current = args
+    racers = fetch_racers(jcd, rno) if (not is_closed or is_current) else []
+    result = fetch_result(jcd, rno) if is_closed else None
+    return rno, racers, result
+
+def scrape_venue(jcd, schedule):
+    """1場のデータをまとめて取得（レースは並列）"""
     name = VENUE_NAMES.get(jcd, jcd)
-
-    schedule = get_race_schedule(jcd)
-    if not schedule:
-        return None
-
     race_nos = sorted(schedule.keys())
 
-    # 現在レース = 「発売終了」の最後。なければ最初のレース
     closed = [r for r in race_nos if schedule[r]['closed']]
     current_race = closed[-1] if closed else race_nos[0]
 
-    # 天候・展示タイム（現在レースから取得）
-    weather = get_weather(jcd, current_race)
+    # 天候（現在レースから）
+    weather = fetch_weather(jcd, current_race)
     wind = weather['wind']
-    print(f'[{name}] {len(race_nos)}R 現在{current_race}R | '
-          f'{wind["direction"]} {wind["speed"]}m {weather["weather"]}')
+
+    # レースデータを並列取得（最大4並列）
+    tasks = [
+        (jcd, rno, schedule[rno]['closed'], rno == current_race)
+        for rno in race_nos
+    ]
+    race_data = {}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for rno, racers, result in ex.map(fetch_race_data, tasks):
+            race_data[rno] = (racers, result)
+
+    # 現在レースに展示タイムをマージ
+    if current_race in race_data:
+        racers, result = race_data[current_race]
+        tenji = weather.get('tenji', {})
+        for racer in racers:
+            t = tenji.get(racer['lane'])
+            if t:
+                racer['tenji_time'] = t['tenji_time']
+                racer['tenji_st']   = t['tenji_st']
 
     races = []
     for rno in race_nos:
-        meta    = schedule[rno]
-        is_closed = meta['closed']
+        meta = schedule[rno]
+        racers, result = race_data.get(rno, ([], None))
 
-        if is_closed:
-            # 終了済み/進行中 → 結果を取得、選手情報は不要
-            result  = get_result(jcd, rno)
-            racers  = []
-            status  = '終了' if result else '進行中'
+        if result:
+            status = '終了'
+        elif meta['closed']:
+            status = '進行中'
         else:
-            # 未開始 → 出走表を取得
-            racers  = get_racers(jcd, rno)
-            result  = None
-            status  = '待機中'
-
-        # 現在レースだけ展示タイムをマージ & 出走表も取得
-        if rno == current_race and is_closed and not racers:
-            racers = get_racers(jcd, rno)
-            tenji  = weather.get('tenji', {})
-            for racer in racers:
-                t = tenji.get(racer['lane'])
-                if t:
-                    racer['tenji_time'] = t['tenji_time']
-                    racer['tenji_st']   = t['tenji_st']
+            status = '待機中'
 
         races.append({
-            'race_no': rno,
-            'time':    meta['time'],
-            'status':  status,
-            'racers':  racers,
-            'result':  result,
+            'race_no': rno, 'time': meta['time'],
+            'status': status, 'racers': racers, 'result': result,
         })
+
+    print(f'  ✅ {name}: {len(races)}R (現在{current_race}R, '
+          f'{sum(1 for r in races if r["status"]=="終了")}終了/'
+          f'{sum(1 for r in races if r["status"]=="進行中")}進行中/'
+          f'{sum(1 for r in races if r["status"]=="待機中")}待機中)')
 
     return {
         'id': jcd, 'name': name,
@@ -309,14 +312,28 @@ def scrape_venue(jcd):
 
 def main():
     print(f'=== ボートレース {DATE_LABEL} ===')
+    t0 = time.time()
+
+    # Phase1: 全24場のスケジュールを並列取得
+    print('Phase1: スケジュール取得中...')
+    schedules = {}
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for jcd, schedule in ex.map(fetch_schedule, VENUE_NAMES.keys()):
+            if schedule:
+                schedules[jcd] = schedule
+            else:
+                print(f'  ─ {VENUE_NAMES[jcd]}: 本日開催なし')
+
+    active = {jcd: s for jcd, s in schedules.items()}
+    print(f'Phase1完了: {len(active)}場 ({time.time()-t0:.0f}秒)')
+
+    # Phase2: 開催場のデータを取得（場ごとは逐次、レースは並列）
+    print('Phase2: レースデータ取得中...')
     venues_data = []
-    for jcd, name in VENUE_NAMES.items():
-        result = scrape_venue(jcd)
-        if result and result['races']:
+    for jcd, schedule in active.items():
+        result = scrape_venue(jcd, schedule)
+        if result:
             venues_data.append(result)
-        else:
-            print(f'  ─ {name}: 本日開催なし')
-        time.sleep(0.3)
 
     output = {
         'date': DATE_LABEL,
@@ -325,7 +342,10 @@ def main():
     }
     out_path = Path(__file__).parent.parent / 'public' / 'data' / 'races.json'
     out_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
-    print(f'\n✅ {len(venues_data)}場 / {sum(len(v["races"]) for v in venues_data)}R 保存完了')
+
+    elapsed = time.time() - t0
+    print(f'\n✅ {len(venues_data)}場 / {sum(len(v["races"]) for v in venues_data)}R 保存完了 '
+          f'({elapsed:.0f}秒)')
 
 if __name__ == '__main__':
     main()
