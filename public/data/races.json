@@ -1,6 +1,6 @@
 {
   "date": "2026-07-06",
-  "generated_at": "2026-07-06T08:02:45.887200+09:00",
+  "generated_at": "2026-07-06T09:07:24.455408+09:00",
   "venues": [
     {
       "id": "01",
@@ -82509,16 +82509,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 2
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:47現在気温24.0℃曇り風速2m水温23.0℃波高2cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 23.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:44",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -95778,16 +95778,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 2
+        "wave": 1
       },
-      "weather": "水面気象情報　7:55現在気温25.6℃曇り風速2m水温26.1℃波高2cmスタンド",
+      "weather": "水面気象情報　8:35現在気温26.4℃曇り風速1m水温26.3℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 26.1,
+      "water_temp": 26.3,
       "races": [
         {
           "race_no": 1,
           "time": "08:32",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -96974,7 +96974,7 @@
         },
         {
           "race_no": 2,
-          "time": "08:58",
+          "time": "09:00",
           "status": "待機中",
           "racers": [
             {
@@ -98044,7 +98044,7 @@
         },
         {
           "race_no": 3,
-          "time": "09:24",
+          "time": "09:26",
           "status": "待機中",
           "racers": [
             {
@@ -99114,7 +99114,7 @@
         },
         {
           "race_no": 4,
-          "time": "09:50",
+          "time": "09:52",
           "status": "待機中",
           "racers": [
             {
@@ -100184,7 +100184,7 @@
         },
         {
           "race_no": 5,
-          "time": "10:18",
+          "time": "10:20",
           "status": "待機中",
           "racers": [
             {
@@ -101313,7 +101313,7 @@
         },
         {
           "race_no": 6,
-          "time": "10:46",
+          "time": "10:48",
           "status": "待機中",
           "racers": [
             {
@@ -102383,7 +102383,7 @@
         },
         {
           "race_no": 7,
-          "time": "11:15",
+          "time": "11:16",
           "status": "待機中",
           "racers": [
             {
