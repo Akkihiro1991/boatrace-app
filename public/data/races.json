@@ -1,6 +1,6 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27T08:01:45.936754+09:00",
+  "generated_at": "2026-07-27T09:02:51.716917+09:00",
   "venues": [
     {
       "id": "01",
@@ -70245,14 +70245,14 @@
         "direction": "",
         "wave": 0
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:42現在気温28.0℃晴風速0m水温29.0℃波高0cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 29.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:39",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -72191,7 +72191,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 3,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -72435,7 +72435,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 1,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -74178,7 +74178,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 6,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -74422,7 +74422,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -87586,7 +87586,7 @@
         {
           "race_no": 1,
           "time": "08:46",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -129917,14 +129917,14 @@
         "direction": "",
         "wave": 1
       },
-      "weather": "水面気象情報　7:55現在気温30.7℃晴風速0m水温32.6℃波高1cmスタンド",
+      "weather": "水面気象情報　8:35現在気温31.4℃晴風速0m水温32.7℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 32.6,
+      "water_temp": 32.7,
       "races": [
         {
           "race_no": 1,
           "time": "08:32",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
