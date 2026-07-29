@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "generated_at": "2026-07-29T08:03:45.800848+09:00",
+  "generated_at": "2026-07-29T09:02:56.759152+09:00",
   "venues": [
     {
       "id": "04",
@@ -14088,16 +14088,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:35現在気温26.0℃晴風速1m水温26.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 26.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:32",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -53116,16 +53116,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:05現在気温28.0℃曇り風速1m水温28.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 28.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:46",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -87784,16 +87784,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 2
+        "wave": 3
       },
-      "weather": "水面気象情報　8:00現在気温29.0℃晴風速2m水温32.0℃波高2cmスタンド",
+      "weather": "水面気象情報　8:45現在気温29.0℃曇り風速3m水温32.0℃波高3cmスタンド",
       "air_temp": null,
       "water_temp": 32.0,
       "races": [
         {
           "race_no": 1,
-          "time": "08:39",
-          "status": "待機中",
+          "time": "08:41",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -88154,7 +88154,7 @@
         },
         {
           "race_no": 2,
-          "time": "09:05",
+          "time": "09:07",
           "status": "待機中",
           "racers": [
             {
@@ -88516,7 +88516,7 @@
         },
         {
           "race_no": 3,
-          "time": "09:31",
+          "time": "09:33",
           "status": "待機中",
           "racers": [
             {
@@ -88878,7 +88878,7 @@
         },
         {
           "race_no": 4,
-          "time": "09:57",
+          "time": "09:59",
           "status": "待機中",
           "racers": [
             {
@@ -89240,7 +89240,7 @@
         },
         {
           "race_no": 5,
-          "time": "10:23",
+          "time": "10:25",
           "status": "待機中",
           "racers": [
             {
@@ -89602,7 +89602,7 @@
         },
         {
           "race_no": 6,
-          "time": "10:52",
+          "time": "10:53",
           "status": "待機中",
           "racers": [
             {
@@ -89909,7 +89909,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 6,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -89964,7 +89964,7 @@
         },
         {
           "race_no": 7,
-          "time": "11:20",
+          "time": "11:21",
           "status": "待機中",
           "racers": [
             {
@@ -89976,7 +89976,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 1,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -90326,7 +90326,7 @@
         },
         {
           "race_no": 8,
-          "time": "11:49",
+          "time": "11:50",
           "status": "待機中",
           "racers": [
             {
@@ -90515,7 +90515,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -91121,7 +91121,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 2,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -91963,7 +91963,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
