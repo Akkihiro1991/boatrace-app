@@ -1,6 +1,6 @@
 {
   "date": "2026-08-09",
-  "generated_at": "2026-08-09T08:04:08.588625+09:00",
+  "generated_at": "2026-08-09T08:29:40.900378+09:00",
   "venues": [
     {
       "id": "02",
@@ -34796,11 +34796,11 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:00現在気温26.0℃曇り風速1m水温29.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 29.0,
       "races": [
         {
           "race_no": 1,
