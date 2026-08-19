@@ -1,6 +1,6 @@
 {
   "date": "2026-08-20",
-  "generated_at": "2026-08-20T07:57:55.469885+09:00",
+  "generated_at": "2026-08-20T08:25:11.853857+09:00",
   "venues": [
     {
       "id": "02",
@@ -86456,11 +86456,11 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:05現在気温28.0℃晴風速1m水温28.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 28.0,
       "races": [
         {
           "race_no": 1,
@@ -121183,11 +121183,11 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 2
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:00現在気温28.0℃晴風速2m水温29.0℃波高2cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 29.0,
       "races": [
         {
           "race_no": 1,
