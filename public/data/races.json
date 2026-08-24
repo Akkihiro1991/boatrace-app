@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "generated_at": "2026-08-25T08:24:30.674808+09:00",
+  "generated_at": "2026-08-25T08:52:37.179594+09:00",
   "venues": [
     {
       "id": "01",
@@ -65042,7 +65042,7 @@
         {
           "race_no": 1,
           "time": "08:40",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -90983,14 +90983,14 @@
         "direction": "",
         "wave": 1
       },
-      "weather": "水面気象情報　7:55現在気温29.3℃晴風速1m水温31.8℃波高1cmスタンド",
+      "weather": "水面気象情報　8:35現在気温31.3℃晴風速1m水温31.9℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 31.8,
+      "water_temp": 31.9,
       "races": [
         {
           "race_no": 1,
           "time": "08:32",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
