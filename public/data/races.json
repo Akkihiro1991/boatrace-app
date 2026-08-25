@@ -1,18 +1,18 @@
 {
   "date": "2026-08-25",
-  "generated_at": "2026-08-25T18:37:42.875754+09:00",
+  "generated_at": "2026-08-25T19:10:03.984884+09:00",
   "venues": [
     {
       "id": "01",
       "name": "桐生",
       "status": "開催中",
-      "current_race": 8,
+      "current_race": 9,
       "wind": {
         "speed": 0,
         "direction": "",
         "wave": 1
       },
-      "weather": "水面気象情報　7R時点気温32.0℃晴風速1m水温27.0℃波高1cmスタンド",
+      "weather": "水面気象情報　8R時点気温31.0℃晴風速2m水温27.0℃波高1cmスタンド",
       "air_temp": null,
       "water_temp": 27.0,
       "races": [
@@ -69,368 +69,13 @@
           "race_no": 8,
           "time": "18:25",
           "status": "進行中",
-          "racers": [
-            {
-              "lane": 1,
-              "name": "3590\n                            /A1濱野谷　憲吾東京/東京52歳/54.4kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 1,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "4361\n                            /A1柳生　　泰二山口/山口41歳/52.5kg",
-              "no": "2R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 2,
-              "boat_2rate": 2.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "4787\n                            /A1椎名　　　豊群馬/群馬37歳/52.2kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 3,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "4604\n                            /A1岩瀬　　裕亮愛知/愛知38歳/52.0kg",
-              "no": "4R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 4,
-              "boat_2rate": 4.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "3783\n                            /A1瓜生　　正義福岡/福岡50歳/52.6kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 5,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "4013\n                            /A1中島　　孝平福井/福井46歳/52.0kg",
-              "no": "1R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 6,
-              "boat_2rate": 1.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            }
-          ],
+          "racers": [],
           "result": null
         },
         {
           "race_no": 9,
           "time": "18:56",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -1158,7 +803,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5121\n                            /A1定松　　勇樹佐賀/福岡25歳/52.0kg",
+              "name": "5121\n                            /A1定松　　勇樹佐賀/福岡25歳/50.5kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -1217,7 +862,7 @@
             },
             {
               "lane": 2,
-              "name": "4262\n                            /A1馬場　　貴也滋賀/京都42歳/53.7kg",
+              "name": "4262\n                            /A1馬場　　貴也滋賀/京都42歳/52.9kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -1276,7 +921,7 @@
             },
             {
               "lane": 3,
-              "name": "4237\n                            /A1大峯　　　豊山口/山口42歳/52.0kg",
+              "name": "4237\n                            /A1大峯　　　豊山口/山口42歳/51.0kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -1335,7 +980,7 @@
             },
             {
               "lane": 4,
-              "name": "5224\n                            /A1西岡　　顕心香川/香川25歳/51.5kg",
+              "name": "5224\n                            /A1西岡　　顕心香川/香川25歳/49.5kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -1453,7 +1098,7 @@
             },
             {
               "lane": 6,
-              "name": "4344\n                            /A1新田　　雄史三重/三重41歳/53.6kg",
+              "name": "4344\n                            /A1新田　　雄史三重/三重41歳/52.6kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -8151,13 +7796,13 @@
       "id": "15",
       "name": "丸亀",
       "status": "開催中",
-      "current_race": 8,
+      "current_race": 9,
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 2
+        "wave": 1
       },
-      "weather": "水面気象情報　7R時点気温33.0℃晴風速2m水温30.0℃波高2cmスタンド",
+      "weather": "水面気象情報　8R時点気温32.0℃晴風速1m水温30.0℃波高1cmスタンド",
       "air_temp": null,
       "water_temp": 30.0,
       "races": [
@@ -8214,781 +7859,13 @@
           "race_no": 8,
           "time": "18:16",
           "status": "進行中",
-          "racers": [
-            {
-              "lane": 1,
-              "name": "4570\n                            /A1前田　　聖文愛知/愛知38歳/53.3kg",
-              "no": "12R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 1,
-              "boat_2rate": 5.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 1,
-              "name": "6",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 1,
-              "name": "５",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "3679\n                            /A2飯島　　昌弘埼玉/埼玉53歳/52.0kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 2,
-              "boat_2rate": 4.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": ".12",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "5331\n                            /B1佐藤　　永梧東京/神奈川22歳/53.3kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 3,
-              "boat_2rate": 3.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "5289\n                            /A2佃　　　來紀大阪/奈良25歳/52.0kg",
-              "no": "1R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 4,
-              "boat_2rate": 5.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "3",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "4683\n                            /B2向井田　直弥広島/広島35歳/47.0kg",
-              "no": "2R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 5,
-              "boat_2rate": 1.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "１",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "5432\n                            /B1安藤　　瑠希静岡/静岡21歳/52.0kg",
-              "no": "3R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 6,
-              "boat_2rate": 7.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "4",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "４",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            }
-          ],
+          "racers": [],
           "result": null
         },
         {
           "race_no": 9,
           "time": "18:46",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -12673,6 +11550,65 @@
               "mae_zuke": false
             },
             {
+              "lane": 3,
+              "name": "２",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
               "lane": 4,
               "name": "4528\n                            /A1黒井　　達矢埼玉/埼玉38歳/52.0kg",
               "no": "7R",
@@ -12682,6 +11618,65 @@
               "motor_2rate": 0.0,
               "boat_no": 4,
               "boat_2rate": 8.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 4,
+              "name": "1",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -14535,13 +13530,13 @@
       "id": "20",
       "name": "若松",
       "status": "開催中",
-      "current_race": 7,
+      "current_race": 8,
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 4
+        "wave": 3
       },
-      "weather": "水面気象情報　6R時点気温32.0℃晴風速4m水温33.0℃波高4cmスタンド",
+      "weather": "水面気象情報　7R時点気温32.0℃晴風速3m水温33.0℃波高3cmスタンド",
       "air_temp": null,
       "water_temp": 33.0,
       "races": [
@@ -14591,1076 +13586,13 @@
           "race_no": 7,
           "time": "18:06",
           "status": "進行中",
-          "racers": [
-            {
-              "lane": 1,
-              "name": "5005\n                            /A1石田　　貴洋埼玉/埼玉30歳/52.0kg",
-              "no": "11R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 1,
-              "boat_2rate": 4.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "４",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "5186\n                            /B1遠藤　　圭吾東京/神奈川26歳/52.3kg",
-              "no": "3R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 2,
-              "boat_2rate": 8.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "1",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "4113\n                            /B1木村　　浩士群馬/群馬46歳/55.3kg",
-              "no": "1R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 3,
-              "boat_2rate": 4.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "2",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "2",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "5",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "3532\n                            /B2柴田　　　光群馬/群馬54歳/52.9kg",
-              "no": "2R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 4,
-              "boat_2rate": 5.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "３",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "3987\n                            /A1後藤　　正宗静岡/静岡48歳/53.2kg",
-              "no": "12R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 5,
-              "boat_2rate": 3.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "3",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "5",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "６",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "４",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "３",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "3974\n                            /B1深山　　祐二佐賀/佐賀49歳/52.0kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 6,
-              "boat_2rate": 6.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "４",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            }
-          ],
+          "racers": [],
           "result": null
         },
         {
           "race_no": 8,
           "time": "18:37",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
