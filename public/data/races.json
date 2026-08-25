@@ -1,6 +1,6 @@
 {
   "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:27:42.074153+09:00",
+  "generated_at": "2026-08-26T08:56:19.977721+09:00",
   "venues": [
     {
       "id": "01",
@@ -77724,16 +77724,16 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 2
+        "wave": 3
       },
-      "weather": "水面気象情報　7:42現在気温29.0℃晴風速2m水温29.0℃波高2cmスタンド",
+      "weather": "水面気象情報　8:36現在気温30.0℃晴風速3m水温29.0℃波高3cmスタンド",
       "air_temp": null,
       "water_temp": 29.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:32",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
@@ -79790,7 +79790,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 5,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -79916,7 +79916,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 1,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -80514,7 +80514,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 5,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -80817,7 +80817,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -81541,7 +81541,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -99722,7 +99722,7 @@
         {
           "race_no": 1,
           "time": "08:40",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
