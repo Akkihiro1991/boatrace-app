@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "generated_at": "2026-11-02T02:06:56.361784+09:00",
+  "generated_at": "2026-11-02T09:13:12.024605+09:00",
   "venues": [
     {
       "id": "02",
@@ -35571,9 +35571,9 @@
         "direction": "",
         "wave": 0
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　9:00現在気温17.0℃曇り風速1m水温20.0℃波高0cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 20.0,
       "races": [
         {
           "race_no": 1,
@@ -61336,976 +61336,31 @@
       "id": "14",
       "name": "鳴門",
       "status": "開催中",
-      "current_race": 1,
+      "current_race": 2,
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　1R時点気温17.0℃曇り風速1m水温22.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 22.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:35",
-          "status": "待機中",
-          "racers": [
-            {
-              "lane": 1,
-              "name": "4239\n                            /A1竹田　　辰也山口/山口42歳/52.1kg",
-              "no": "11R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 1,
-              "boat_2rate": 3.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 1,
-              "name": "5",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 1,
-              "name": "３",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 1,
-              "name": "3",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "3293\n                            /B1宮内　由紀英東京/東京61歳/52.0kg",
-              "no": "9R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 2,
-              "boat_2rate": 5.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "４",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "３",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 2,
-              "name": "5",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "4672\n                            /B1守屋　　大地岡山/岡山40歳/52.0kg",
-              "no": "8R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 3,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "1",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "2",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 3,
-              "name": "５",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 4,
-              "name": "4458\n                            /B1抹香　　雄三広島/広島40歳/53.3kg",
-              "no": "6R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 4,
-              "boat_2rate": 2.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 5,
-              "name": "5337\n                            /B1出畑　　孝成福岡/福岡20歳/52.5kg",
-              "no": "7R",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 5,
-              "boat_2rate": 4.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "３",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 0,
-              "boat_2rate": 0.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            },
-            {
-              "lane": 6,
-              "name": "3950\n                            /B1石川　　哲秀大阪/大阪50歳/57.2kg",
-              "no": "",
-              "rank": "B1",
-              "branch": "",
-              "motor_no": 0,
-              "motor_2rate": 0.0,
-              "boat_no": 6,
-              "boat_2rate": 1.0,
-              "course_stats": {
-                "1": 0.0,
-                "2": 0.0,
-                "3": 0.0,
-                "4": 0.0,
-                "5": 0.0,
-                "6": 0.0
-              },
-              "course_detail": {
-                "1": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "2": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "3": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "4": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "5": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                },
-                "6": {
-                  "win": 0.0,
-                  "place2": 0.0,
-                  "place3": 0.0
-                }
-              },
-              "st_avg": 0.18,
-              "tenji_time": null,
-              "tenji_st": null,
-              "recent_results": [],
-              "style": "差し",
-              "local_rate": 0.0,
-              "flying": 0,
-              "mae_zuke": false
-            }
-          ],
+          "status": "進行中",
+          "racers": [],
           "result": null
         },
         {
           "race_no": 2,
           "time": "09:01",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
-              "name": "3655\n                            /B1本橋　　克洋群馬/群馬53歳/52.3kg",
+              "name": "3655\n                            /B1本橋　　克洋群馬/群馬53歳/53.0kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -62364,7 +61419,7 @@
             },
             {
               "lane": 2,
-              "name": "4708\n                            /B1半田　　尚也広島/広島37歳/54.7kg",
+              "name": "4708\n                            /B1半田　　尚也広島/広島37歳/54.9kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -62482,7 +61537,7 @@
             },
             {
               "lane": 3,
-              "name": "5141\n                            /A1大澤　　風葵群馬/群馬25歳/52.0kg",
+              "name": "5141\n                            /A1大澤　　風葵群馬/群馬25歳/52.2kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -63072,7 +62127,7 @@
             },
             {
               "lane": 5,
-              "name": "5181\n                            /B1森　　　智哉岡山/岡山28歳/52.0kg",
+              "name": "5181\n                            /B1森　　　智哉岡山/岡山28歳/52.1kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -63308,7 +62363,7 @@
             },
             {
               "lane": 6,
-              "name": "4365\n                            /A2盛本　　真輔兵庫/兵庫41歳/51.5kg",
+              "name": "4365\n                            /A2盛本　　真輔兵庫/兵庫41歳/52.1kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -63375,7 +62430,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4174\n                            /A1赤坂　　俊輔長崎/長崎44歳/52.6kg",
+              "name": "4174\n                            /A1赤坂　　俊輔長崎/長崎44歳/52.0kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -63493,7 +62548,7 @@
             },
             {
               "lane": 2,
-              "name": "4200\n                            /B1早川　　尚人大阪/大阪44歳/53.0kg",
+              "name": "4200\n                            /B1早川　　尚人大阪/大阪44歳/53.2kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -63670,7 +62725,7 @@
             },
             {
               "lane": 3,
-              "name": "4945\n                            /B1上村　　宏太東京/東京34歳/53.4kg",
+              "name": "4945\n                            /B1上村　　宏太東京/東京34歳/53.7kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -64083,7 +63138,7 @@
             },
             {
               "lane": 5,
-              "name": "4872\n                            /B1山下　　流心広島/広島33歳/53.0kg",
+              "name": "4872\n                            /B1山下　　流心広島/広島33歳/52.4kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -64260,7 +63315,7 @@
             },
             {
               "lane": 6,
-              "name": "5240\n                            /B1高橋　　龍治福岡/福岡26歳/52.8kg",
+              "name": "5240\n                            /B1高橋　　龍治福岡/福岡26歳/53.6kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -64327,7 +63382,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3333\n                            /A1丸尾　　義孝徳島/徳島58歳/52.1kg",
+              "name": "3333\n                            /A1丸尾　　義孝徳島/徳島58歳/52.3kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -64563,7 +63618,7 @@
             },
             {
               "lane": 2,
-              "name": "4229\n                            /B1市川　　美宏静岡/静岡43歳/53.2kg",
+              "name": "4229\n                            /B1市川　　美宏静岡/静岡43歳/53.1kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -64740,7 +63795,7 @@
             },
             {
               "lane": 3,
-              "name": "5109\n                            /B1川崎　　智稔岡山/岡山27歳/52.0kg",
+              "name": "5109\n                            /B1川崎　　智稔岡山/岡山27歳/52.5kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -65153,7 +64208,7 @@
             },
             {
               "lane": 5,
-              "name": "5409\n                            /B2宮本　　琉正福岡/沖縄21歳/55.4kg",
+              "name": "5409\n                            /B2宮本　　琉正福岡/沖縄21歳/55.3kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -65456,7 +64511,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4498\n                            /B2宮本　　夏樹長崎/長崎39歳/54.3kg",
+              "name": "4498\n                            /B2宮本　　夏樹長崎/長崎39歳/54.2kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -65692,7 +64747,7 @@
             },
             {
               "lane": 2,
-              "name": "4735\n                            /B1角山　　雄哉兵庫/兵庫35歳/53.1kg",
+              "name": "4735\n                            /B1角山　　雄哉兵庫/兵庫35歳/53.2kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -66046,7 +65101,7 @@
             },
             {
               "lane": 4,
-              "name": "4523\n                            /A2中村　　辰也長崎/長崎38歳/52.6kg",
+              "name": "4523\n                            /A2中村　　辰也長崎/長崎38歳/52.7kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -66341,7 +65396,7 @@
             },
             {
               "lane": 5,
-              "name": "4723\n                            /B1寺島　　吉彦東京/福島40歳/50.0kg",
+              "name": "4723\n                            /B1寺島　　吉彦東京/福島40歳/51.0kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -66585,7 +65640,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4598\n                            /B1加藤　　政彦東京/東京42歳/52.8kg",
+              "name": "4598\n                            /B1加藤　　政彦東京/東京42歳/53.0kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -66821,7 +65876,7 @@
             },
             {
               "lane": 2,
-              "name": "4156\n                            /A2浜野　　孝志三重/三重45歳/56.4kg",
+              "name": "4156\n                            /A2浜野　　孝志三重/三重45歳/56.2kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -66939,7 +65994,7 @@
             },
             {
               "lane": 3,
-              "name": "4708\n                            /B1半田　　尚也広島/広島37歳/54.7kg",
+              "name": "4708\n                            /B1半田　　尚也広島/広島37歳/54.9kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -67116,7 +66171,7 @@
             },
             {
               "lane": 4,
-              "name": "5392\n                            /B2安武　　一也福岡/福岡26歳/51.5kg",
+              "name": "5392\n                            /B2安武　　一也福岡/福岡26歳/52.0kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -67411,7 +66466,7 @@
             },
             {
               "lane": 5,
-              "name": "4458\n                            /B1抹香　　雄三広島/広島40歳/53.3kg",
+              "name": "4458\n                            /B1抹香　　雄三広島/広島40歳/53.2kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -67588,7 +66643,7 @@
             },
             {
               "lane": 6,
-              "name": "4812\n                            /A1西野　　雄貴徳島/徳島36歳/51.5kg",
+              "name": "4812\n                            /A1西野　　雄貴徳島/徳島36歳/52.0kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -67714,7 +66769,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5337\n                            /B1出畑　　孝成福岡/福岡20歳/52.5kg",
+              "name": "5337\n                            /B1出畑　　孝成福岡/福岡20歳/52.8kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -67773,7 +66828,7 @@
             },
             {
               "lane": 2,
-              "name": "4872\n                            /B1山下　　流心広島/広島33歳/53.0kg",
+              "name": "4872\n                            /B1山下　　流心広島/広島33歳/52.4kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -67950,7 +67005,7 @@
             },
             {
               "lane": 3,
-              "name": "4365\n                            /A2盛本　　真輔兵庫/兵庫41歳/51.5kg",
+              "name": "4365\n                            /A2盛本　　真輔兵庫/兵庫41歳/52.1kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -68127,7 +67182,7 @@
             },
             {
               "lane": 4,
-              "name": "4945\n                            /B1上村　　宏太東京/東京34歳/53.4kg",
+              "name": "4945\n                            /B1上村　　宏太東京/東京34歳/53.7kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -68363,7 +67418,7 @@
             },
             {
               "lane": 5,
-              "name": "5141\n                            /A1大澤　　風葵群馬/群馬25歳/52.0kg",
+              "name": "5141\n                            /A1大澤　　風葵群馬/群馬25歳/52.2kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -68540,7 +67595,7 @@
             },
             {
               "lane": 6,
-              "name": "5111\n                            /A2三村　　岳人岡山/岡山27歳/51.5kg",
+              "name": "5111\n                            /A2三村　　岳人岡山/岡山27歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -68784,7 +67839,7 @@
             },
             {
               "lane": 2,
-              "name": "5109\n                            /B1川崎　　智稔岡山/岡山27歳/52.0kg",
+              "name": "5109\n                            /B1川崎　　智稔岡山/岡山27歳/52.5kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -69138,7 +68193,7 @@
             },
             {
               "lane": 3,
-              "name": "4200\n                            /B1早川　　尚人大阪/大阪44歳/53.0kg",
+              "name": "4200\n                            /B1早川　　尚人大阪/大阪44歳/53.2kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -69322,7 +68377,7 @@
               "motor_no": 0,
               "motor_2rate": 0.0,
               "boat_no": 4,
-              "boat_2rate": 0.0,
+              "boat_2rate": 1.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -69374,7 +68429,7 @@
             },
             {
               "lane": 5,
-              "name": "4229\n                            /B1市川　　美宏静岡/静岡43歳/53.2kg",
+              "name": "4229\n                            /B1市川　　美宏静岡/静岡43歳/53.1kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -69551,7 +68606,7 @@
             },
             {
               "lane": 6,
-              "name": "4314\n                            /A2青木　幸太郎福岡/福岡42歳/51.0kg",
+              "name": "4314\n                            /A2青木　幸太郎福岡/福岡42歳/51.5kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -69618,7 +68673,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4723\n                            /B1寺島　　吉彦東京/福島40歳/50.0kg",
+              "name": "4723\n                            /B1寺島　　吉彦東京/福島40歳/51.0kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -69795,7 +68850,7 @@
             },
             {
               "lane": 2,
-              "name": "5181\n                            /B1森　　　智哉岡山/岡山28歳/52.0kg",
+              "name": "5181\n                            /B1森　　　智哉岡山/岡山28歳/52.1kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -69972,7 +69027,7 @@
             },
             {
               "lane": 3,
-              "name": "3293\n                            /B1宮内　由紀英東京/東京61歳/52.0kg",
+              "name": "3293\n                            /B1宮内　由紀英東京/東京61歳/52.3kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -70149,7 +69204,7 @@
             },
             {
               "lane": 4,
-              "name": "5409\n                            /B2宮本　　琉正福岡/沖縄21歳/55.4kg",
+              "name": "5409\n                            /B2宮本　　琉正福岡/沖縄21歳/55.3kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -70621,7 +69676,7 @@
             },
             {
               "lane": 6,
-              "name": "3333\n                            /A1丸尾　　義孝徳島/徳島58歳/52.1kg",
+              "name": "3333\n                            /A1丸尾　　義孝徳島/徳島58歳/52.3kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -70688,7 +69743,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5240\n                            /B1高橋　　龍治福岡/福岡26歳/52.8kg",
+              "name": "5240\n                            /B1高橋　　龍治福岡/福岡26歳/53.6kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -70924,7 +69979,7 @@
             },
             {
               "lane": 2,
-              "name": "4812\n                            /A1西野　　雄貴徳島/徳島36歳/51.5kg",
+              "name": "4812\n                            /A1西野　　雄貴徳島/徳島36歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -71337,7 +70392,7 @@
             },
             {
               "lane": 4,
-              "name": "4174\n                            /A1赤坂　　俊輔長崎/長崎44歳/52.6kg",
+              "name": "4174\n                            /A1赤坂　　俊輔長崎/長崎44歳/52.0kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -71514,7 +70569,7 @@
             },
             {
               "lane": 5,
-              "name": "4598\n                            /B1加藤　　政彦東京/東京42歳/52.8kg",
+              "name": "4598\n                            /B1加藤　　政彦東京/東京42歳/53.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -71750,7 +70805,7 @@
             },
             {
               "lane": 6,
-              "name": "4498\n                            /B2宮本　　夏樹長崎/長崎39歳/54.3kg",
+              "name": "4498\n                            /B2宮本　　夏樹長崎/長崎39歳/54.2kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -71817,7 +70872,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4523\n                            /A2中村　　辰也長崎/長崎38歳/52.6kg",
+              "name": "4523\n                            /A2中村　　辰也長崎/長崎38歳/52.7kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -72348,7 +71403,7 @@
             },
             {
               "lane": 4,
-              "name": "3655\n                            /B1本橋　　克洋群馬/群馬53歳/52.3kg",
+              "name": "3655\n                            /B1本橋　　克洋群馬/群馬53歳/53.0kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -72643,7 +71698,7 @@
             },
             {
               "lane": 5,
-              "name": "4156\n                            /A2浜野　　孝志三重/三重45歳/56.4kg",
+              "name": "4156\n                            /A2浜野　　孝志三重/三重45歳/56.2kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -72702,7 +71757,7 @@
             },
             {
               "lane": 6,
-              "name": "5392\n                            /B2安武　　一也福岡/福岡26歳/51.5kg",
+              "name": "5392\n                            /B2安武　　一也福岡/福岡26歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -72887,7 +71942,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5199\n                            /B1垂水　　　悠徳島/徳島24歳/54.9kg",
+              "name": "5199\n                            /B1垂水　　　悠徳島/徳島24歳/54.3kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -73123,7 +72178,7 @@
             },
             {
               "lane": 2,
-              "name": "5191\n                            /A1飛田　　江己埼玉/東京25歳/52.1kg",
+              "name": "5191\n                            /A1飛田　　江己埼玉/東京25歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -73713,7 +72768,7 @@
             },
             {
               "lane": 4,
-              "name": "4816\n                            /A2村松　　修二広島/広島35歳/55.9kg",
+              "name": "4816\n                            /A2村松　　修二広島/広島35歳/55.8kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -73772,7 +72827,7 @@
             },
             {
               "lane": 5,
-              "name": "4199\n                            /A1北川　　潤二愛知/愛知44歳/56.7kg",
+              "name": "4199\n                            /A1北川　　潤二愛知/愛知44歳/57.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -78379,11 +77434,11 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:55現在気温17.0℃雨風速0m水温21.0℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 21.0,
       "races": [
         {
           "race_no": 1,
@@ -78628,7 +77683,7 @@
             },
             {
               "lane": 5,
-              "name": "5331\n                            /B1佐藤　　永梧東京/神奈川22歳/54.5kg",
+              "name": "5331\n                            /B1佐藤　　永梧東京/神奈川22歳/53.9kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -78687,7 +77742,7 @@
             },
             {
               "lane": 6,
-              "name": "5456\n                            /B2今村　天次朗兵庫/兵庫20歳/51.5kg",
+              "name": "5456\n                            /B2今村　天次朗兵庫/兵庫20歳/52.0kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -78754,7 +77809,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5303\n                            /A2土井　　歩夢福岡/福岡23歳/52.2kg",
+              "name": "5303\n                            /A2土井　　歩夢福岡/福岡23歳/52.3kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -78813,7 +77868,7 @@
             },
             {
               "lane": 2,
-              "name": "5375\n                            /B1庄島　　潤成山口/山口22歳/54.1kg",
+              "name": "5375\n                            /B1庄島　　潤成山口/山口22歳/53.7kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -78872,7 +77927,7 @@
             },
             {
               "lane": 3,
-              "name": "5368\n                            /B1宮崎　心之介埼玉/埼玉24歳/52.3kg",
+              "name": "5368\n                            /B1宮崎　心之介埼玉/埼玉24歳/52.2kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -78990,7 +78045,7 @@
             },
             {
               "lane": 5,
-              "name": "5383\n                            /B1中村　　　楓三重/三重22歳/52.8kg",
+              "name": "5383\n                            /B1中村　　　楓三重/三重22歳/52.4kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -79049,7 +78104,7 @@
             },
             {
               "lane": 6,
-              "name": "5029\n                            /A1中　　　亮太福岡/熊本29歳/53.3kg",
+              "name": "5029\n                            /A1中　　　亮太福岡/熊本29歳/52.7kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -79116,7 +78171,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5318\n                            /B1河内　　一馬愛知/愛知25歳/54.4kg",
+              "name": "5318\n                            /B1河内　　一馬愛知/愛知25歳/53.5kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -79293,7 +78348,7 @@
             },
             {
               "lane": 4,
-              "name": "5266\n                            /B1石田　　勇斗愛知/愛知26歳/52.6kg",
+              "name": "5266\n                            /B1石田　　勇斗愛知/愛知26歳/52.2kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -79411,7 +78466,7 @@
             },
             {
               "lane": 6,
-              "name": "5234\n                            /A1塚越　　海斗群馬/群馬28歳/52.3kg",
+              "name": "5234\n                            /A1塚越　　海斗群馬/群馬28歳/52.2kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -79537,7 +78592,7 @@
             },
             {
               "lane": 2,
-              "name": "5385\n                            /B1鈴木　　柊介静岡/静岡21歳/54.9kg",
+              "name": "5385\n                            /B1鈴木　　柊介静岡/静岡21歳/54.6kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -79596,7 +78651,7 @@
             },
             {
               "lane": 3,
-              "name": "5285\n                            /B1若林　　　麗東京/山梨27歳/52.0kg",
+              "name": "5285\n                            /B1若林　　　麗東京/山梨27歳/51.5kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -79655,7 +78710,7 @@
             },
             {
               "lane": 4,
-              "name": "5372\n                            /B2上岡　　巧汰広島/広島24歳/51.5kg",
+              "name": "5372\n                            /B2上岡　　巧汰広島/広島24歳/52.0kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -79714,7 +78769,7 @@
             },
             {
               "lane": 5,
-              "name": "5386\n                            /B1米玉利　大悟兵庫/兵庫20歳/52.6kg",
+              "name": "5386\n                            /B1米玉利　大悟兵庫/兵庫20歳/53.7kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -79773,7 +78828,7 @@
             },
             {
               "lane": 6,
-              "name": "5313\n                            /B1鈴木　　唯央群馬/群馬26歳/52.4kg",
+              "name": "5313\n                            /B1鈴木　　唯央群馬/群馬26歳/52.0kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -79840,7 +78895,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5332\n                            /B1村松　　遥輝静岡/静岡22歳/54.5kg",
+              "name": "5332\n                            /B1村松　　遥輝静岡/静岡22歳/53.6kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -79899,7 +78954,7 @@
             },
             {
               "lane": 2,
-              "name": "5302\n                            /B1秋末　　秦悟大阪/大阪23歳/52.1kg",
+              "name": "5302\n                            /B1秋末　　秦悟大阪/大阪23歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80076,7 +79131,7 @@
             },
             {
               "lane": 5,
-              "name": "5127\n                            /B1沼田　　大都愛知/広島30歳/52.0kg",
+              "name": "5127\n                            /B1沼田　　大都愛知/広島30歳/51.5kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -80135,7 +79190,7 @@
             },
             {
               "lane": 6,
-              "name": "5452\n                            /B2上馬場　風依広島/広島20歳/52.0kg",
+              "name": "5452\n                            /B2上馬場　風依広島/広島20歳/52.1kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80202,7 +79257,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5350\n                            /B1網代　　良芽兵庫/兵庫22歳/51.5kg",
+              "name": "5350\n                            /B1網代　　良芽兵庫/兵庫22歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80261,7 +79316,7 @@
             },
             {
               "lane": 2,
-              "name": "5160\n                            /A2藤森　　陸斗福岡/福岡27歳/52.4kg",
+              "name": "5160\n                            /A2藤森　　陸斗福岡/福岡27歳/52.7kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -80320,7 +79375,7 @@
             },
             {
               "lane": 3,
-              "name": "5298\n                            /A1水谷　　理人香川/香川24歳/51.5kg",
+              "name": "5298\n                            /A1水谷　　理人香川/香川24歳/52.0kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -80379,7 +79434,7 @@
             },
             {
               "lane": 4,
-              "name": "5154\n                            /B1村松　　栄太広島/広島30歳/52.3kg",
+              "name": "5154\n                            /B1村松　　栄太広島/広島30歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80497,7 +79552,7 @@
             },
             {
               "lane": 6,
-              "name": "5301\n                            /B1岩下　　巧斗群馬/群馬24歳/52.0kg",
+              "name": "5301\n                            /B1岩下　　巧斗群馬/群馬24歳/52.2kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80564,7 +79619,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5018\n                            /A1竹下　　大樹福岡/福岡27歳/53.9kg",
+              "name": "5018\n                            /A1竹下　　大樹福岡/福岡27歳/54.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80623,7 +79678,7 @@
             },
             {
               "lane": 2,
-              "name": "5186\n                            /B1遠藤　　圭吾東京/神奈川26歳/52.2kg",
+              "name": "5186\n                            /B1遠藤　　圭吾東京/神奈川26歳/52.1kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -80926,7 +79981,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5368\n                            /B1宮崎　心之介埼玉/埼玉24歳/52.3kg",
+              "name": "5368\n                            /B1宮崎　心之介埼玉/埼玉24歳/52.2kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -81044,7 +80099,7 @@
             },
             {
               "lane": 3,
-              "name": "5356\n                            /B1長谷川　　暖岡山/鳥取21歳/52.0kg",
+              "name": "5356\n                            /B1長谷川　　暖岡山/鳥取21歳/51.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -81162,7 +80217,7 @@
             },
             {
               "lane": 5,
-              "name": "5456\n                            /B2今村　天次朗兵庫/兵庫20歳/51.5kg",
+              "name": "5456\n                            /B2今村　天次朗兵庫/兵庫20歳/52.0kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -81288,7 +80343,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5383\n                            /B1中村　　　楓三重/三重22歳/52.8kg",
+              "name": "5383\n                            /B1中村　　　楓三重/三重22歳/52.4kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -81347,7 +80402,7 @@
             },
             {
               "lane": 2,
-              "name": "5238\n                            /A2笹木　　香吾山口/山口26歳/53.6kg",
+              "name": "5238\n                            /A2笹木　　香吾山口/山口26歳/53.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -81406,7 +80461,7 @@
             },
             {
               "lane": 3,
-              "name": "5243\n                            /B1三馬　　崇史広島/広島26歳/53.2kg",
+              "name": "5243\n                            /B1三馬　　崇史広島/広島26歳/52.9kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -81524,7 +80579,7 @@
             },
             {
               "lane": 5,
-              "name": "5318\n                            /B1河内　　一馬愛知/愛知25歳/54.4kg",
+              "name": "5318\n                            /B1河内　　一馬愛知/愛知25歳/53.5kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -81583,7 +80638,7 @@
             },
             {
               "lane": 6,
-              "name": "5372\n                            /B2上岡　　巧汰広島/広島24歳/51.5kg",
+              "name": "5372\n                            /B2上岡　　巧汰広島/広島24歳/52.0kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -81650,7 +80705,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5331\n                            /B1佐藤　　永梧東京/神奈川22歳/54.5kg",
+              "name": "5331\n                            /B1佐藤　　永梧東京/神奈川22歳/53.9kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -81827,7 +80882,7 @@
             },
             {
               "lane": 4,
-              "name": "5375\n                            /B1庄島　　潤成山口/山口22歳/54.1kg",
+              "name": "5375\n                            /B1庄島　　潤成山口/山口22歳/53.7kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -81945,7 +81000,7 @@
             },
             {
               "lane": 6,
-              "name": "5256\n                            /A1中山　　翔太三重/三重22歳/52.3kg",
+              "name": "5256\n                            /A1中山　　翔太三重/三重22歳/52.2kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -82012,7 +81067,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5160\n                            /A2藤森　　陸斗福岡/福岡27歳/52.4kg",
+              "name": "5160\n                            /A2藤森　　陸斗福岡/福岡27歳/52.7kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -82071,7 +81126,7 @@
             },
             {
               "lane": 2,
-              "name": "5127\n                            /B1沼田　　大都愛知/広島30歳/52.0kg",
+              "name": "5127\n                            /B1沼田　　大都愛知/広島30歳/51.5kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -82130,7 +81185,7 @@
             },
             {
               "lane": 3,
-              "name": "5234\n                            /A1塚越　　海斗群馬/群馬28歳/52.3kg",
+              "name": "5234\n                            /A1塚越　　海斗群馬/群馬28歳/52.2kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -82189,7 +81244,7 @@
             },
             {
               "lane": 4,
-              "name": "5029\n                            /A1中　　　亮太福岡/熊本29歳/53.3kg",
+              "name": "5029\n                            /A1中　　　亮太福岡/熊本29歳/52.7kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -82307,7 +81362,7 @@
             },
             {
               "lane": 6,
-              "name": "5285\n                            /B1若林　　　麗東京/山梨27歳/52.0kg",
+              "name": "5285\n                            /B1若林　　　麗東京/山梨27歳/51.5kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -82374,7 +81429,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5298\n                            /A1水谷　　理人香川/香川24歳/51.5kg",
+              "name": "5298\n                            /A1水谷　　理人香川/香川24歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -82433,7 +81488,7 @@
             },
             {
               "lane": 2,
-              "name": "5313\n                            /B1鈴木　　唯央群馬/群馬26歳/52.4kg",
+              "name": "5313\n                            /B1鈴木　　唯央群馬/群馬26歳/52.0kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -82551,7 +81606,7 @@
             },
             {
               "lane": 4,
-              "name": "5303\n                            /A2土井　　歩夢福岡/福岡23歳/52.2kg",
+              "name": "5303\n                            /A2土井　　歩夢福岡/福岡23歳/52.3kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -82669,7 +81724,7 @@
             },
             {
               "lane": 6,
-              "name": "5266\n                            /B1石田　　勇斗愛知/愛知26歳/52.6kg",
+              "name": "5266\n                            /B1石田　　勇斗愛知/愛知26歳/52.2kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -82739,20 +81794,20 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 2
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:46現在気温17.0℃雨風速2m水温21.0℃波高2cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 21.0,
       "races": [
         {
           "race_no": 1,
           "time": "08:43",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
-              "name": "3422\n                            /A2服部　　幸男静岡/静岡55歳/55.1kg",
+              "name": "3422\n                            /A2服部　　幸男静岡/静岡55歳/54.8kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -83106,7 +82161,7 @@
             },
             {
               "lane": 3,
-              "name": "3949\n                            /B1今出　　晋二岡山/岡山50歳/55.8kg",
+              "name": "3949\n                            /B1今出　　晋二岡山/岡山50歳/56.0kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -83401,7 +82456,7 @@
             },
             {
               "lane": 5,
-              "name": "3224\n                            /B1栗山　　繁洋佐賀/佐賀61歳/52.1kg",
+              "name": "3224\n                            /B1栗山　　繁洋佐賀/佐賀61歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -83755,7 +82810,7 @@
             },
             {
               "lane": 6,
-              "name": "3901\n                            /B2松田　　憲幸山口/山口49歳/52.0kg",
+              "name": "3901\n                            /B2松田　　憲幸山口/山口49歳/52.2kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -83822,7 +82877,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3582\n                            /A2吉川　　昭男滋賀/滋賀53歳/52.9kg",
+              "name": "3582\n                            /A2吉川　　昭男滋賀/滋賀53歳/52.6kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -84892,7 +83947,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3541\n                            /A2三嶌　　誠司香川/香川58歳/52.0kg",
+              "name": "3541\n                            /A2三嶌　　誠司香川/香川58歳/52.1kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -85187,7 +84242,7 @@
             },
             {
               "lane": 2,
-              "name": "3564\n                            /B1桑原　　　啓福岡/熊本56歳/52.1kg",
+              "name": "3564\n                            /B1桑原　　　啓福岡/熊本56歳/52.8kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -85364,7 +84419,7 @@
             },
             {
               "lane": 3,
-              "name": "3434\n                            /B1松尾　　宣邦福岡/福岡57歳/52.5kg",
+              "name": "3434\n                            /B1松尾　　宣邦福岡/福岡57歳/53.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -85600,7 +84655,7 @@
             },
             {
               "lane": 4,
-              "name": "3961\n                            /A1谷村　　一哉山口/山口47歳/54.8kg",
+              "name": "3961\n                            /A1谷村　　一哉山口/山口47歳/54.9kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -85777,7 +84832,7 @@
             },
             {
               "lane": 5,
-              "name": "3661\n                            /A2柳瀬　　興志山口/山口57歳/58.2kg",
+              "name": "3661\n                            /A2柳瀬　　興志山口/山口57歳/58.1kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -85954,7 +85009,7 @@
             },
             {
               "lane": 6,
-              "name": "3964\n                            /B1宮地　　博士長崎/長崎47歳/52.0kg",
+              "name": "3964\n                            /B1宮地　　博士長崎/長崎47歳/52.3kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -86021,7 +85076,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4137\n                            /A1君島　　秀三滋賀/滋賀46歳/52.4kg",
+              "name": "4137\n                            /A1君島　　秀三滋賀/滋賀46歳/52.0kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -86198,7 +85253,7 @@
             },
             {
               "lane": 2,
-              "name": "3826\n                            /A2村田　　修次東京/東京53歳/52.3kg",
+              "name": "3826\n                            /A2村田　　修次東京/東京53歳/52.0kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -87024,7 +86079,7 @@
             },
             {
               "lane": 6,
-              "name": "3024\n                            /B2西島　　義則広島/島根64歳/52.3kg",
+              "name": "3024\n                            /B2西島　　義則広島/島根64歳/52.0kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -87091,7 +86146,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3442\n                            /B1宮武　　英司香川/香川57歳/53.7kg",
+              "name": "3442\n                            /B1宮武　　英司香川/香川57歳/53.3kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -87268,7 +86323,7 @@
             },
             {
               "lane": 2,
-              "name": "3690\n                            /B1河合　　三弘愛知/愛知56歳/52.7kg",
+              "name": "3690\n                            /B1河合　　三弘愛知/愛知56歳/52.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -87445,7 +86500,7 @@
             },
             {
               "lane": 3,
-              "name": "3935\n                            /B1岩津　　徹郎岡山/岡山49歳/52.9kg",
+              "name": "3935\n                            /B1岩津　　徹郎岡山/岡山49歳/53.3kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -87681,7 +86736,7 @@
             },
             {
               "lane": 4,
-              "name": "3711\n                            /A2江本　　真治山口/山口52歳/52.8kg",
+              "name": "3711\n                            /A2江本　　真治山口/山口52歳/52.6kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -88094,7 +87149,7 @@
             },
             {
               "lane": 6,
-              "name": "3319\n                            /A2山崎　　義明埼玉/埼玉59歳/51.5kg",
+              "name": "3319\n                            /A2山崎　　義明埼玉/埼玉59歳/52.0kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -88161,7 +87216,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4118\n                            /A2宇佐見　　淳愛知/愛知45歳/52.1kg",
+              "name": "4118\n                            /A2宇佐見　　淳愛知/愛知45歳/52.0kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -88928,7 +87983,7 @@
             },
             {
               "lane": 4,
-              "name": "3224\n                            /B1栗山　　繁洋佐賀/佐賀61歳/52.1kg",
+              "name": "3224\n                            /B1栗山　　繁洋佐賀/佐賀61歳/52.0kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -89349,7 +88404,7 @@
             },
             {
               "lane": 2,
-              "name": "3964\n                            /B1宮地　　博士長崎/長崎47歳/52.0kg",
+              "name": "3964\n                            /B1宮地　　博士長崎/長崎47歳/52.3kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -89467,7 +88522,7 @@
             },
             {
               "lane": 3,
-              "name": "3612\n                            /A1馬袋　　義則兵庫/兵庫54歳/52.6kg",
+              "name": "3612\n                            /A1馬袋　　義則兵庫/兵庫54歳/52.8kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -89644,7 +88699,7 @@
             },
             {
               "lane": 4,
-              "name": "4081\n                            /B1樋口　　範政愛知/愛知47歳/53.8kg",
+              "name": "4081\n                            /B1樋口　　範政愛知/愛知47歳/53.9kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -90057,7 +89112,7 @@
             },
             {
               "lane": 5,
-              "name": "3949\n                            /B1今出　　晋二岡山/岡山50歳/55.8kg",
+              "name": "3949\n                            /B1今出　　晋二岡山/岡山50歳/56.0kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -90301,7 +89356,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3784\n                            /B1中島　　友和佐賀/佐賀50歳/52.9kg",
+              "name": "3784\n                            /B1中島　　友和佐賀/佐賀50歳/52.8kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -90478,7 +89533,7 @@
             },
             {
               "lane": 3,
-              "name": "3661\n                            /A2柳瀬　　興志山口/山口57歳/58.2kg",
+              "name": "3661\n                            /A2柳瀬　　興志山口/山口57歳/58.1kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -91371,7 +90426,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3319\n                            /A2山崎　　義明埼玉/埼玉59歳/51.5kg",
+              "name": "3319\n                            /A2山崎　　義明埼玉/埼玉59歳/52.0kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -91607,7 +90662,7 @@
             },
             {
               "lane": 3,
-              "name": "3627\n                            /A2井上　　恵一福岡/福岡57歳/55.1kg",
+              "name": "3627\n                            /A2井上　　恵一福岡/福岡57歳/54.7kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -91784,7 +90839,7 @@
             },
             {
               "lane": 4,
-              "name": "3990\n                            /B1芹澤　　克彦静岡/静岡48歳/52.0kg",
+              "name": "3990\n                            /B1芹澤　　克彦静岡/静岡48歳/52.4kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -92138,7 +91193,7 @@
             },
             {
               "lane": 5,
-              "name": "3564\n                            /B1桑原　　　啓福岡/熊本56歳/52.1kg",
+              "name": "3564\n                            /B1桑原　　　啓福岡/熊本56歳/52.8kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -92374,7 +91429,7 @@
             },
             {
               "lane": 6,
-              "name": "3826\n                            /A2村田　　修次東京/東京53歳/52.3kg",
+              "name": "3826\n                            /A2村田　　修次東京/東京53歳/52.0kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -92972,7 +92027,7 @@
             },
             {
               "lane": 3,
-              "name": "4137\n                            /A1君島　　秀三滋賀/滋賀46歳/52.4kg",
+              "name": "4137\n                            /A1君島　　秀三滋賀/滋賀46歳/52.0kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -93267,7 +92322,7 @@
             },
             {
               "lane": 5,
-              "name": "3541\n                            /A2三嶌　　誠司香川/香川58歳/52.0kg",
+              "name": "3541\n                            /A2三嶌　　誠司香川/香川58歳/52.1kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -93385,7 +92440,7 @@
             },
             {
               "lane": 6,
-              "name": "3422\n                            /A2服部　　幸男静岡/静岡55歳/55.1kg",
+              "name": "3422\n                            /A2服部　　幸男静岡/静岡55歳/54.8kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -93806,7 +92861,7 @@
             },
             {
               "lane": 3,
-              "name": "3711\n                            /A2江本　　真治山口/山口52歳/52.8kg",
+              "name": "3711\n                            /A2江本　　真治山口/山口52歳/52.6kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -94337,7 +93392,7 @@
             },
             {
               "lane": 5,
-              "name": "3612\n                            /A1馬袋　　義則兵庫/兵庫54歳/52.6kg",
+              "name": "3612\n                            /A1馬袋　　義則兵庫/兵庫54歳/52.8kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -94514,7 +93569,7 @@
             },
             {
               "lane": 6,
-              "name": "3442\n                            /B1宮武　　英司香川/香川57歳/53.7kg",
+              "name": "3442\n                            /B1宮武　　英司香川/香川57歳/53.3kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -94581,7 +93636,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3024\n                            /B2西島　　義則広島/島根64歳/52.3kg",
+              "name": "3024\n                            /B2西島　　義則広島/島根64歳/52.0kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -95171,7 +94226,7 @@
             },
             {
               "lane": 3,
-              "name": "3961\n                            /A1谷村　　一哉山口/山口47歳/54.8kg",
+              "name": "3961\n                            /A1谷村　　一哉山口/山口47歳/54.9kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -95407,7 +94462,7 @@
             },
             {
               "lane": 4,
-              "name": "3582\n                            /A2吉川　　昭男滋賀/滋賀53歳/52.9kg",
+              "name": "3582\n                            /A2吉川　　昭男滋賀/滋賀53歳/52.6kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -95525,7 +94580,7 @@
             },
             {
               "lane": 5,
-              "name": "4118\n                            /A2宇佐見　　淳愛知/愛知45歳/52.1kg",
+              "name": "4118\n                            /A2宇佐見　　淳愛知/愛知45歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -100073,20 +99128,20 @@
       "wind": {
         "speed": 0,
         "direction": "",
-        "wave": 0
+        "wave": 1
       },
-      "weather": "水面気象情報気温風速水温波高スタンド",
+      "weather": "水面気象情報　8:54現在気温17.7℃雨風速1m水温18.9℃波高1cmスタンド",
       "air_temp": null,
-      "water_temp": 0.0,
+      "water_temp": 18.9,
       "races": [
         {
           "race_no": 1,
           "time": "08:51",
-          "status": "待機中",
+          "status": "進行中",
           "racers": [
             {
               "lane": 1,
-              "name": "4394\n                            /A2永嶋　　裕一福岡/福岡40歳/53.4kg",
+              "name": "4394\n                            /A2永嶋　　裕一福岡/福岡40歳/53.6kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -100145,7 +99200,7 @@
             },
             {
               "lane": 2,
-              "name": "3761\n                            /B1山本　　光雄滋賀/滋賀54歳/53.8kg",
+              "name": "3761\n                            /B1山本　　光雄滋賀/滋賀54歳/53.1kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -100204,7 +99259,7 @@
             },
             {
               "lane": 3,
-              "name": "4138\n                            /B1中井　　俊祐大阪/大阪46歳/52.3kg",
+              "name": "4138\n                            /B1中井　　俊祐大阪/大阪46歳/52.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -100263,7 +99318,7 @@
             },
             {
               "lane": 4,
-              "name": "5458\n                            /B2田中　　大輝福岡/福岡20歳/52.8kg",
+              "name": "5458\n                            /B2田中　　大輝福岡/福岡20歳/52.9kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -100448,7 +99503,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4348\n                            /A2宮崎　　　奨香川/香川41歳/53.3kg",
+              "name": "4348\n                            /A2宮崎　　　奨香川/香川41歳/53.2kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -100566,7 +99621,7 @@
             },
             {
               "lane": 3,
-              "name": "4339\n                            /B1平瀬　　城啓福井/富山42歳/53.6kg",
+              "name": "4339\n                            /B1平瀬　　城啓福井/富山42歳/52.7kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -100684,7 +99739,7 @@
             },
             {
               "lane": 5,
-              "name": "3906\n                            /B1飯山　　晃三長崎/長崎48歳/61.3kg",
+              "name": "3906\n                            /B1飯山　　晃三長崎/長崎48歳/60.8kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -100743,7 +99798,7 @@
             },
             {
               "lane": 6,
-              "name": "5448\n                            /B2福田　　柊人山口/山口24歳/50.5kg",
+              "name": "5448\n                            /B2福田　　柊人山口/山口24歳/50.0kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -100810,7 +99865,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4184\n                            /A1渡邊　雄一郎大阪/大阪40歳/52.1kg",
+              "name": "4184\n                            /A1渡邊　雄一郎大阪/大阪40歳/52.0kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -100869,7 +99924,7 @@
             },
             {
               "lane": 2,
-              "name": "4692\n                            /B1酒井　　俊弘福井/福井42歳/52.7kg",
+              "name": "4692\n                            /B1酒井　　俊弘福井/福井42歳/52.0kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -100928,7 +99983,7 @@
             },
             {
               "lane": 3,
-              "name": "4155\n                            /A2長野　壮志郎福岡/福岡45歳/55.5kg",
+              "name": "4155\n                            /A2長野　壮志郎福岡/福岡45歳/54.9kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -101046,7 +100101,7 @@
             },
             {
               "lane": 5,
-              "name": "5055\n                            /A2眞鳥　　章太長崎/長崎30歳/53.4kg",
+              "name": "5055\n                            /A2眞鳥　　章太長崎/長崎30歳/53.3kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -101105,7 +100160,7 @@
             },
             {
               "lane": 6,
-              "name": "3831\n                            /B1安藤　　裕貴愛知/愛知52歳/53.0kg",
+              "name": "3831\n                            /B1安藤　　裕貴愛知/愛知52歳/52.6kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -101231,7 +100286,7 @@
             },
             {
               "lane": 2,
-              "name": "3968\n                            /A2茶谷　　信次滋賀/滋賀50歳/53.4kg",
+              "name": "3968\n                            /A2茶谷　　信次滋賀/滋賀50歳/52.8kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -101290,7 +100345,7 @@
             },
             {
               "lane": 3,
-              "name": "4988\n                            /B1牟田　　奨太静岡/長崎29歳/54.1kg",
+              "name": "4988\n                            /B1牟田　　奨太静岡/長崎29歳/54.7kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -101349,7 +100404,7 @@
             },
             {
               "lane": 4,
-              "name": "5006\n                            /B1久保原　秀人群馬/群馬30歳/55.1kg",
+              "name": "5006\n                            /B1久保原　秀人群馬/群馬30歳/54.9kg",
               "no": "9R",
               "rank": "B1",
               "branch": "",
@@ -101408,7 +100463,7 @@
             },
             {
               "lane": 5,
-              "name": "5002\n                            /A2上田　　健太愛知/愛知30歳/51.0kg",
+              "name": "5002\n                            /A2上田　　健太愛知/愛知30歳/51.5kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -101467,7 +100522,7 @@
             },
             {
               "lane": 6,
-              "name": "3915\n                            /A2繁野谷　圭介大阪/大阪52歳/52.1kg",
+              "name": "3915\n                            /A2繁野谷　圭介大阪/大阪52歳/52.4kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -101534,7 +100589,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "5005\n                            /A1石田　　貴洋埼玉/埼玉30歳/52.2kg",
+              "name": "5005\n                            /A1石田　　貴洋埼玉/埼玉30歳/52.1kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -101593,7 +100648,7 @@
             },
             {
               "lane": 2,
-              "name": "3543\n                            /B1福田　　雅一香川/香川58歳/53.5kg",
+              "name": "3543\n                            /B1福田　　雅一香川/香川58歳/52.8kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -101711,7 +100766,7 @@
             },
             {
               "lane": 4,
-              "name": "3761\n                            /B1山本　　光雄滋賀/滋賀54歳/53.8kg",
+              "name": "3761\n                            /B1山本　　光雄滋賀/滋賀54歳/53.1kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -101770,7 +100825,7 @@
             },
             {
               "lane": 5,
-              "name": "4089\n                            /A2妹尾　　忠幸岡山/岡山46歳/54.6kg",
+              "name": "4089\n                            /A2妹尾　　忠幸岡山/岡山46歳/53.5kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -101829,7 +100884,125 @@
             },
             {
               "lane": 6,
-              "name": "4207\n                            /A1松下　　一也静岡/静岡43歳/54.4kg",
+              "name": "2",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "２",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "4207\n                            /A1松下　　一也静岡/静岡43歳/53.4kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -101896,7 +101069,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4889\n                            /B1後藤　　盛也東京/神奈川38歳/52.0kg",
+              "name": "4889\n                            /B1後藤　　盛也東京/神奈川38歳/52.1kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -101954,8 +101127,67 @@
               "mae_zuke": false
             },
             {
+              "lane": 1,
+              "name": "５",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
               "lane": 2,
-              "name": "3792\n                            /A1田中　　　豪東京/東京54歳/53.7kg",
+              "name": "3792\n                            /A1田中　　　豪東京/東京54歳/52.8kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -101963,6 +101195,65 @@
               "motor_2rate": 0.0,
               "boat_no": 2,
               "boat_2rate": 3.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 2,
+              "name": "3",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -102073,7 +101364,7 @@
             },
             {
               "lane": 4,
-              "name": "3853\n                            /A2岩崎　　正哉福岡/福岡54歳/54.3kg",
+              "name": "3853\n                            /A2岩崎　　正哉福岡/福岡54歳/54.0kg",
               "no": "10R",
               "rank": "B1",
               "branch": "",
@@ -102132,7 +101423,7 @@
             },
             {
               "lane": 5,
-              "name": "4138\n                            /B1中井　　俊祐大阪/大阪46歳/52.3kg",
+              "name": "4138\n                            /B1中井　　俊祐大阪/大阪46歳/52.0kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -102376,7 +101667,66 @@
             },
             {
               "lane": 3,
-              "name": "3889\n                            /B1須藤　　隆雄群馬/栃木51歳/53.7kg",
+              "name": "4",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 3,
+              "name": "3889\n                            /B1須藤　　隆雄群馬/栃木51歳/53.2kg",
               "no": "11R",
               "rank": "B1",
               "branch": "",
@@ -102435,7 +101785,7 @@
             },
             {
               "lane": 4,
-              "name": "4563\n                            /B1齋藤　　真之岡山/岡山38歳/53.3kg",
+              "name": "4563\n                            /B1齋藤　　真之岡山/岡山38歳/53.2kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -102494,7 +101844,7 @@
             },
             {
               "lane": 5,
-              "name": "5448\n                            /B2福田　　柊人山口/山口24歳/50.5kg",
+              "name": "5448\n                            /B2福田　　柊人山口/山口24歳/50.0kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -102553,7 +101903,66 @@
             },
             {
               "lane": 6,
-              "name": "4692\n                            /B1酒井　　俊弘福井/福井42歳/52.7kg",
+              "name": "３",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "4692\n                            /B1酒井　　俊弘福井/福井42歳/52.0kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -102620,7 +102029,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3906\n                            /B1飯山　　晃三長崎/長崎48歳/61.3kg",
+              "name": "3906\n                            /B1飯山　　晃三長崎/長崎48歳/60.8kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -102679,7 +102088,7 @@
             },
             {
               "lane": 2,
-              "name": "5055\n                            /A2眞鳥　　章太長崎/長崎30歳/53.4kg",
+              "name": "5055\n                            /A2眞鳥　　章太長崎/長崎30歳/53.3kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -102738,7 +102147,7 @@
             },
             {
               "lane": 3,
-              "name": "4019\n                            /A1笠原　　　亮静岡/静岡46歳/52.7kg",
+              "name": "4019\n                            /A1笠原　　　亮静岡/静岡46歳/52.1kg",
               "no": "12R",
               "rank": "B1",
               "branch": "",
@@ -102797,7 +102206,7 @@
             },
             {
               "lane": 4,
-              "name": "5002\n                            /A2上田　　健太愛知/愛知30歳/51.0kg",
+              "name": "5002\n                            /A2上田　　健太愛知/愛知30歳/51.5kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -102856,7 +102265,7 @@
             },
             {
               "lane": 5,
-              "name": "3928\n                            /B1林　　　恵祐福岡/福岡51歳/59.8kg",
+              "name": "3928\n                            /B1林　　　恵祐福岡/福岡51歳/60.0kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -102915,7 +102324,7 @@
             },
             {
               "lane": 6,
-              "name": "5458\n                            /B2田中　　大輝福岡/福岡20歳/52.8kg",
+              "name": "5458\n                            /B2田中　　大輝福岡/福岡20歳/52.9kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -102923,6 +102332,124 @@
               "motor_2rate": 0.0,
               "boat_no": 6,
               "boat_2rate": 6.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "6",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "６",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -103041,7 +102568,7 @@
             },
             {
               "lane": 2,
-              "name": "4394\n                            /A2永嶋　　裕一福岡/福岡40歳/53.4kg",
+              "name": "4394\n                            /A2永嶋　　裕一福岡/福岡40歳/53.6kg",
               "no": "1R",
               "rank": "B1",
               "branch": "",
@@ -103100,7 +102627,7 @@
             },
             {
               "lane": 3,
-              "name": "5006\n                            /B1久保原　秀人群馬/群馬30歳/55.1kg",
+              "name": "5006\n                            /B1久保原　秀人群馬/群馬30歳/54.9kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
@@ -103108,6 +102635,65 @@
               "motor_2rate": 0.0,
               "boat_no": 3,
               "boat_2rate": 7.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 4,
+              "name": "１",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -103218,7 +102804,7 @@
             },
             {
               "lane": 5,
-              "name": "4184\n                            /A1渡邊　雄一郎大阪/大阪40歳/52.1kg",
+              "name": "4184\n                            /A1渡邊　雄一郎大阪/大阪40歳/52.0kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -103226,6 +102812,65 @@
               "motor_2rate": 0.0,
               "boat_no": 5,
               "boat_2rate": 4.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 6,
+              "name": "1",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
               "course_stats": {
                 "1": 0.0,
                 "2": 0.0,
@@ -103403,7 +103048,7 @@
             },
             {
               "lane": 2,
-              "name": "3853\n                            /A2岩崎　　正哉福岡/福岡54歳/54.3kg",
+              "name": "3853\n                            /A2岩崎　　正哉福岡/福岡54歳/54.0kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -103520,8 +103165,126 @@
               "mae_zuke": false
             },
             {
+              "lane": 3,
+              "name": "４",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
               "lane": 4,
-              "name": "4142\n                            /A2平野　　和明愛知/愛知45歳/54.1kg",
+              "name": "5",
+              "no": "",
+              "rank": "B1",
+              "branch": "",
+              "motor_no": 0,
+              "motor_2rate": 0.0,
+              "boat_no": 0,
+              "boat_2rate": 0.0,
+              "course_stats": {
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+              },
+              "course_detail": {
+                "1": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "2": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "3": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "4": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "5": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                },
+                "6": {
+                  "win": 0.0,
+                  "place2": 0.0,
+                  "place3": 0.0
+                }
+              },
+              "st_avg": 0.18,
+              "tenji_time": null,
+              "tenji_st": null,
+              "recent_results": [],
+              "style": "差し",
+              "local_rate": 0.0,
+              "flying": 0,
+              "mae_zuke": false
+            },
+            {
+              "lane": 4,
+              "name": "4142\n                            /A2平野　　和明愛知/愛知45歳/54.7kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -103580,7 +103343,7 @@
             },
             {
               "lane": 5,
-              "name": "4995\n                            /B1田邉　　亮蔵東京/千葉35歳/54.4kg",
+              "name": "4995\n                            /B1田邉　　亮蔵東京/千葉35歳/54.1kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -103639,7 +103402,7 @@
             },
             {
               "lane": 6,
-              "name": "4089\n                            /A2妹尾　　忠幸岡山/岡山46歳/54.6kg",
+              "name": "4089\n                            /A2妹尾　　忠幸岡山/岡山46歳/53.5kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -103706,7 +103469,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "3505\n                            /A2山田　　竜一東京/東京55歳/52.2kg",
+              "name": "3505\n                            /A2山田　　竜一東京/東京55歳/52.6kg",
               "no": "",
               "rank": "B1",
               "branch": "",
@@ -103765,7 +103528,7 @@
             },
             {
               "lane": 2,
-              "name": "4207\n                            /A1松下　　一也静岡/静岡43歳/54.4kg",
+              "name": "4207\n                            /A1松下　　一也静岡/静岡43歳/53.4kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -103824,7 +103587,7 @@
             },
             {
               "lane": 3,
-              "name": "4889\n                            /B1後藤　　盛也東京/神奈川38歳/52.0kg",
+              "name": "4889\n                            /B1後藤　　盛也東京/神奈川38歳/52.1kg",
               "no": "6R",
               "rank": "B1",
               "branch": "",
@@ -103883,7 +103646,7 @@
             },
             {
               "lane": 4,
-              "name": "3889\n                            /B1須藤　　隆雄群馬/栃木51歳/53.7kg",
+              "name": "3889\n                            /B1須藤　　隆雄群馬/栃木51歳/53.2kg",
               "no": "7R",
               "rank": "B1",
               "branch": "",
@@ -104001,7 +103764,7 @@
             },
             {
               "lane": 6,
-              "name": "4155\n                            /A2長野　壮志郎福岡/福岡45歳/55.5kg",
+              "name": "4155\n                            /A2長野　壮志郎福岡/福岡45歳/54.9kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -104068,7 +103831,7 @@
           "racers": [
             {
               "lane": 1,
-              "name": "4019\n                            /A1笠原　　　亮静岡/静岡46歳/52.7kg",
+              "name": "4019\n                            /A1笠原　　　亮静岡/静岡46歳/52.1kg",
               "no": "8R",
               "rank": "B1",
               "branch": "",
@@ -104186,7 +103949,7 @@
             },
             {
               "lane": 3,
-              "name": "3831\n                            /B1安藤　　裕貴愛知/愛知52歳/53.0kg",
+              "name": "3831\n                            /B1安藤　　裕貴愛知/愛知52歳/52.6kg",
               "no": "3R",
               "rank": "B1",
               "branch": "",
@@ -104245,7 +104008,7 @@
             },
             {
               "lane": 4,
-              "name": "4348\n                            /A2宮崎　　　奨香川/香川41歳/53.3kg",
+              "name": "4348\n                            /A2宮崎　　　奨香川/香川41歳/53.2kg",
               "no": "2R",
               "rank": "B1",
               "branch": "",
@@ -104304,7 +104067,7 @@
             },
             {
               "lane": 5,
-              "name": "5005\n                            /A1石田　　貴洋埼玉/埼玉30歳/52.2kg",
+              "name": "5005\n                            /A1石田　　貴洋埼玉/埼玉30歳/52.1kg",
               "no": "5R",
               "rank": "B1",
               "branch": "",
@@ -104363,7 +104126,7 @@
             },
             {
               "lane": 6,
-              "name": "3968\n                            /A2茶谷　　信次滋賀/滋賀50歳/53.4kg",
+              "name": "3968\n                            /A2茶谷　　信次滋賀/滋賀50歳/52.8kg",
               "no": "4R",
               "rank": "B1",
               "branch": "",
